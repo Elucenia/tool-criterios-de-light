@@ -1,0 +1,242 @@
+{
+  "tool": {
+    "id": "criterios-de-light",
+    "title": "Critérios de Light",
+    "short": "Derrame pleural: transudato ou exsudato",
+    "desc": "Aplique os critérios de Light ao derrame pleural (proteína e DHL no líquido e no soro) para diferenciar transudato de exsudato, com gradiente de albumina.",
+    "lead": "Diferencia transudato de exsudato no líquido pleural a partir da proteína e da desidrogenase lática (DHL) do líquido e do soro.",
+    "spec": [
+      "pneumologia",
+      "cirurgia-toracica",
+      "clinica-medica",
+      "medicina-intensiva"
+    ],
+    "fields": [
+      [
+        "pt_pl",
+        "Proteína no líquido pleural",
+        "num",
+        {
+          "min": 0.1,
+          "max": 10,
+          "step": 0.1,
+          "unit": "g/dL",
+          "ph": "3,5"
+        }
+      ],
+      [
+        "pt_sr",
+        "Proteína sérica",
+        "num",
+        {
+          "min": 1,
+          "max": 12,
+          "step": 0.1,
+          "unit": "g/dL",
+          "ph": "7,0"
+        }
+      ],
+      [
+        "dhl_pl",
+        "DHL no líquido pleural",
+        "num",
+        {
+          "min": 10,
+          "max": 20000,
+          "unit": "U/L",
+          "ph": "250"
+        }
+      ],
+      [
+        "dhl_sr",
+        "DHL sérica",
+        "num",
+        {
+          "min": 10,
+          "max": 5000,
+          "unit": "U/L",
+          "ph": "200"
+        }
+      ],
+      [
+        "dhl_lsn",
+        "Limite superior da normalidade da DHL sérica (do laboratório)",
+        "num",
+        {
+          "min": 100,
+          "max": 1000,
+          "unit": "U/L",
+          "ph": "250"
+        }
+      ],
+      [
+        "alb_pl",
+        "Albumina no líquido pleural",
+        "num",
+        {
+          "min": 0.1,
+          "max": 6,
+          "step": 0.1,
+          "unit": "g/dL",
+          "ph": "1,5",
+          "opt": true
+        }
+      ],
+      [
+        "alb_sr",
+        "Albumina sérica",
+        "num",
+        {
+          "min": 0.5,
+          "max": 6,
+          "step": 0.1,
+          "unit": "g/dL",
+          "ph": "3,5",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p>É <strong>exsudato</strong> se houver <strong>pelo menos um</strong> critério:</p><ul><li>proteína pleural / proteína sérica &gt; 0,5;</li><li>DHL pleural / DHL sérica &gt; 0,6;</li><li>DHL pleural &gt; 2/3 do limite superior normal da DHL sérica.</li></ul><p>Se nenhum estiver presente, é transudato. <strong>Gradiente de albumina</strong> (soro − pleura) &gt; 1,2 g/dL sugere transudato mesmo com Light positivo.</p>",
+    "table": [
+      [
+        "Tipo",
+        "Causas mais comuns"
+      ],
+      [
+        "Transudato",
+        "Insuficiência cardíaca, cirrose (hidrotórax hepático), síndrome nefrótica, hipoalbuminemia, diálise peritoneal"
+      ],
+      [
+        "Exsudato",
+        "Parapneumônico/empiema, neoplasia, tuberculose, TEP, doenças autoimunes, pancreatite"
+      ]
+    ],
+    "tips": [
+      "Os critérios de Light têm sensibilidade de ~98% para exsudato, mas classificam como exsudato cerca de 25% dos transudatos, sobretudo em quem usa diurético.",
+      "Na insuficiência cardíaca tratada com diurético e Light \"positivo\" por pouco, use o gradiente de albumina (&gt; 1,2 g/dL) ou de proteína (&gt; 3,1 g/dL) para confirmar transudato.",
+      "Todo exsudato pede investigação: pH, glicose, celularidade diferencial, citologia oncótica, bacterioscopia/cultura e ADA (tuberculose).",
+      "pH &lt; 7,20 ou glicose &lt; 60 mg/dL em derrame parapneumônico indica drenagem torácica."
+    ],
+    "sources": [
+      [
+        "Light RW et al. Pleural effusions: the diagnostic separation of transudates and exudates. Ann Intern Med, 1972.",
+        "https://doi.org/10.7326/0003-4819-77-4-507"
+      ],
+      [
+        "Light RW. Clinical practice. Pleural effusion. N Engl J Med, 2002.",
+        "https://doi.org/10.1056/NEJMcp010731"
+      ]
+    ],
+    "cases": [
+      [
+        "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        {
+          "pt_pl": 4,
+          "pt_sr": 6,
+          "dhl_pl": 300,
+          "dhl_sr": 250,
+          "dhl_lsn": 220
+        },
+        {
+          "raw": {
+            "rp": 0.667,
+            "rd": 1.2,
+            "n": 3,
+            "exs": true
+          },
+          "level": "mid",
+          "tol": 0.01
+        }
+      ],
+      [
+        "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        {
+          "pt_pl": 2,
+          "pt_sr": 7,
+          "dhl_pl": 100,
+          "dhl_sr": 200,
+          "dhl_lsn": 250
+        },
+        {
+          "raw": {
+            "rp": 0.286,
+            "rd": 0.5,
+            "n": 0,
+            "exs": false
+          },
+          "level": "low",
+          "tol": 0.01
+        }
+      ],
+      [
+        "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        {
+          "pt_pl": 3,
+          "pt_sr": 6,
+          "dhl_pl": 120,
+          "dhl_sr": 200,
+          "dhl_lsn": 180
+        },
+        {
+          "raw": {
+            "n": 0,
+            "exs": false
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        {
+          "pt_pl": 2.5,
+          "pt_sr": 6.5,
+          "dhl_pl": 150,
+          "dhl_sr": 200,
+          "dhl_lsn": 300,
+          "alb_pl": 1.9,
+          "alb_sr": 3.5
+        },
+        {
+          "raw": {
+            "rd": 0.75,
+            "n": 1,
+            "exs": true
+          },
+          "level": "mid"
+        }
+      ]
+    ],
+    "batch": "torax-vascular",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/torax-vascular.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/torax-vascular.php",
+    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
+    "bytes": 91275
+  },
+  "clinicalValidation": "not-performed"
+}

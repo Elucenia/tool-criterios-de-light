@@ -1,0 +1,113 @@
+[
+  {
+    "label": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+    "input": {
+      "pt_pl": 4,
+      "pt_sr": 6,
+      "dhl_pl": 300,
+      "dhl_sr": 250,
+      "dhl_lsn": 220
+    },
+    "expected": {
+      "raw": {
+        "rp": 0.667,
+        "rd": 1.2,
+        "n": 3,
+        "exs": true
+      },
+      "level": "mid",
+      "tol": 0.01
+    },
+    "originalInput": {
+      "pt_pl": 4,
+      "pt_sr": 6,
+      "dhl_pl": 300,
+      "dhl_sr": 250,
+      "dhl_lsn": 220
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+    "input": {
+      "pt_pl": 2,
+      "pt_sr": 7,
+      "dhl_pl": 100,
+      "dhl_sr": 200,
+      "dhl_lsn": 250
+    },
+    "expected": {
+      "raw": {
+        "rp": 0.286,
+        "rd": 0.5,
+        "n": 0,
+        "exs": false
+      },
+      "level": "low",
+      "tol": 0.01
+    },
+    "originalInput": {
+      "pt_pl": 2,
+      "pt_sr": 7,
+      "dhl_pl": 100,
+      "dhl_sr": 200,
+      "dhl_lsn": 250
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+    "input": {
+      "pt_pl": 3,
+      "pt_sr": 6,
+      "dhl_pl": 120,
+      "dhl_sr": 200,
+      "dhl_lsn": 180
+    },
+    "expected": {
+      "raw": {
+        "n": 0,
+        "exs": false
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "pt_pl": 3,
+      "pt_sr": 6,
+      "dhl_pl": 120,
+      "dhl_sr": 200,
+      "dhl_lsn": 180
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+    "input": {
+      "pt_pl": 2.5,
+      "pt_sr": 6.5,
+      "dhl_pl": 150,
+      "dhl_sr": 200,
+      "dhl_lsn": 300,
+      "alb_pl": 1.9,
+      "alb_sr": 3.5
+    },
+    "expected": {
+      "raw": {
+        "rd": 0.75,
+        "n": 1,
+        "exs": true
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "pt_pl": 2.5,
+      "pt_sr": 6.5,
+      "dhl_pl": 150,
+      "dhl_sr": 200,
+      "dhl_lsn": 300,
+      "alb_pl": 1.9,
+      "alb_sr": 3.5
+    },
+    "expandedZeroOptions": []
+  }
+]
