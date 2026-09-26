@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-criterios-de-light · Elucenia · https://github.com/Elucenia/tool-criterios-de-light
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"criterios-de-light","title":"Critérios de Light","fields":[["pt_pl","Proteína no líquido pleural","num",{"min":0.1,"max":10,"step":0.1,"unit":"g/dL","ph":"3,5"}],["pt_sr","Proteína sérica","num",{"min":1,"max":12,"step":0.1,"unit":"g/dL","ph":"7,0"}],["dhl_pl","DHL no líquido pleural","num",{"min":10,"max":20000,"unit":"U/L","ph":"250"}],["dhl_sr","DHL sérica","num",{"min":10,"max":5000,"unit":"U/L","ph":"200"}],["dhl_lsn","Limite superior da normalidade da DHL sérica (do laboratório)","num",{"min":100,"max":1000,"unit":"U/L","ph":"250"}],["alb_pl","Albumina no líquido pleural","num",{"min":0.1,"max":6,"step":0.1,"unit":"g/dL","ph":"1,5","opt":true}],["alb_sr","Albumina sérica","num",{"min":0.5,"max":6,"step":0.1,"unit":"g/dL","ph":"3,5","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
