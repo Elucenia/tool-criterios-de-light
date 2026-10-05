@@ -1,0 +1,240 @@
+{
+  "schema": "elucenia-current-per-tool-local-publication-candidate",
+  "id": "criterios-de-light",
+  "repository": "Elucenia/tool-criterios-de-light",
+  "parentCommitSha": "9d2b957011a1616ccf2d302113cb78a4aef02b21",
+  "baseTreeSha": "52639be3e11db39ec368358879490830a00576cf",
+  "protectedFiles": {
+    "LICENSE": {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358,
+      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    "NOTICE": {
+      "path": "NOTICE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3cd9b7eab8bd1bf6da5de3c8d131bc9051f25e2",
+      "size": 1626,
+      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/c3cd9b7eab8bd1bf6da5de3c8d131bc9051f25e2"
+    },
+    "AUTHORSHIP.md": {
+      "path": "AUTHORSHIP.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "184ebd59050e70dd81848cfb80d4c0716b461873",
+      "size": 3283,
+      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/184ebd59050e70dd81848cfb80d4c0716b461873"
+    },
+    "CITATION.cff": {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d1723eebf5166e17103d290fa9c767933aac88d",
+      "size": 897,
+      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/4d1723eebf5166e17103d290fa9c767933aac88d"
+    },
+    "SECURITY.md": {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "size": 894,
+      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+    },
+    "CONTRIBUTING.md": {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b35f01a1832dc66c6480937445aa84ed00cf4cd",
+      "size": 1469,
+      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/0b35f01a1832dc66c6480937445aa84ed00cf4cd"
+    },
+    ".github/workflows/ci.yml": {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "size": 279,
+      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+    },
+    ".gitattributes": {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "size": 19,
+      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+    },
+    ".gitignore": {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "size": 42,
+      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+    }
+  },
+  "oldCandidate": {
+    "manifest": {
+      "file": "reports/review-20261003/github-publication-candidate-final36-v4.json",
+      "bytes": 6823260,
+      "sha256": "a3c528b12d7b5416fa0e62dda9e5106864bae7ff86710fa765934b5a3069e16c"
+    },
+    "rowId": "criterios-de-light",
+    "publicationProvenance": {
+      "file": "reports/review-20261003/github-publication-candidates-final36-v4/criterios-de-light/publication-provenance.json",
+      "bytes": 6695,
+      "sha256": "a683e4c9da87db5783b4a23d89f0ec248b65e91a480387197d3f117f02aa46d5"
+    },
+    "integrationProvenance": {
+      "file": "reports/review-20261003/github-publication-candidates-final36-v4/criterios-de-light/provenance.json",
+      "bytes": 25595,
+      "sha256": "f83716f913b1a100cbaf24de0df2200d099f9d8cebbf285491d4703c17f209f9"
+    }
+  },
+  "currentSource": {
+    "file": "apps/website/private/tool-code/criterios-de-light/calculator.js",
+    "bytes": 7084,
+    "sha256": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3"
+  },
+  "sourceToolSha256": "ec32fcda042319f77dc7582f7768b66d11e33795fe153c22f09f8cbc2ef2ac8f",
+  "methodVersion": "Light 1972; variante BTS 2023: proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 do LSN sérico.",
+  "implementationVersion": "criterios-de-light@native-2026-10-03+3503a1b15963",
+  "browserBundleSha256": "ca2be52f08927a126f7b5edf7a2aebb0490f1445c03205d4df95ee4f6ff06a3c",
+  "graph": {
+    "entry": "tool-code/criterios-de-light/calculator.js",
+    "modules": [
+      {
+        "file": "tool-code/criterios-de-light/calculator.js",
+        "bytes": 7084,
+        "sha256": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3"
+      }
+    ],
+    "transforms": []
+  },
+  "currentActualHttpEvidence": {
+    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
+    "bytes": 7105457,
+    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
+  },
+  "tests": {
+    "cases": 4,
+    "sourceNodeParityPassed": true,
+    "browserVmParityPassed": true,
+    "independentOracleDerived": false,
+    "actualBrowserDOMVerified": false
+  },
+  "rights": {
+    "historicalPayloadLicenseDeclaration": "Apache-2.0",
+    "currentIntegrationPackageLicenseDeclaration": "MIT",
+    "currentLegalFiles": [
+      {
+        "file": "apps/command-center/private/tool-code/criterios-de-light/LICENSE",
+        "bytes": 1229,
+        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93"
+      },
+      {
+        "file": "apps/command-center/private/tool-code/criterios-de-light/NOTICE.md",
+        "bytes": 1183,
+        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d"
+      }
+    ],
+    "protectedFilesPreservedFromOldPayload": [],
+    "protectedRemoteAttributionReferences": {
+      "LICENSE": {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      "NOTICE": {
+        "path": "NOTICE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c3cd9b7eab8bd1bf6da5de3c8d131bc9051f25e2",
+        "size": 1626,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/c3cd9b7eab8bd1bf6da5de3c8d131bc9051f25e2"
+      },
+      "AUTHORSHIP.md": {
+        "path": "AUTHORSHIP.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "184ebd59050e70dd81848cfb80d4c0716b461873",
+        "size": 3283,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/184ebd59050e70dd81848cfb80d4c0716b461873"
+      },
+      "CITATION.cff": {
+        "path": "CITATION.cff",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4d1723eebf5166e17103d290fa9c767933aac88d",
+        "size": 897,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/4d1723eebf5166e17103d290fa9c767933aac88d"
+      },
+      "SECURITY.md": {
+        "path": "SECURITY.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "size": 894,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+      },
+      "CONTRIBUTING.md": {
+        "path": "CONTRIBUTING.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0b35f01a1832dc66c6480937445aa84ed00cf4cd",
+        "size": 1469,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/0b35f01a1832dc66c6480937445aa84ed00cf4cd"
+      },
+      ".github/workflows/ci.yml": {
+        "path": ".github/workflows/ci.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "size": 279,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+      },
+      ".gitattributes": {
+        "path": ".gitattributes",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "size": 19,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+      },
+      ".gitignore": {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "size": 42,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+      }
+    },
+    "sourceSpecificEvidence": {
+      "sourceSpecificStatus": "not-approved-by-this-consolidation",
+      "sourceSpecificEvidence": null,
+      "wholeInstrumentApproval": false,
+      "oldCandidateInstrumentRightsApproval": "not-performed"
+    },
+    "scope": "Historical Apache declaration and current MIT integration notices retained with exact sources; no relicensing or instrument approval inferred",
+    "reviewRequired": true,
+    "divergences": [
+      "Historical payload and current package declare different license labels; scope/authorship mapping must be reviewed before distribution"
+    ],
+    "wholeInstrumentApproval": false
+  },
+  "appWrites": false,
+  "externalMutations": false,
+  "publicationPerformed": false,
+  "externalPublicationReady": false,
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

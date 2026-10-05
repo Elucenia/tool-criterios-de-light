@@ -1,0 +1,177 @@
+{
+  "completeIndependentBank": {
+    "file": "independent-source-cases.json",
+    "sha256": "4f30520e7c7992147d22810c2329f0f5c9e000455e193b9e7112b75617bdf0e5",
+    "bytes": 23622812,
+    "uniqueApiInputs": 35363,
+    "bankRows": 35364,
+    "sourceContextCount": 35364,
+    "scope": "BTS2023 strict three-predicate arithmetic only: pleural/serum protein >1/2; pleural/serum LDH >3/5; pleural LDH >2/3 serum ULN; any-positive logic. Canonical shortest round-trip decimal Number.toString spelling. Not albumin-gradient, patient diagnosis, full-method validation or clinical approval.",
+    "clinicalApproval": "not-performed",
+    "professionalLanguageApproval": "not-performed",
+    "sourceRightsApproval": "not-performed",
+    "fullMethodConformance": "not-performed"
+  },
+  "completeIndependentBankExecution": {
+    "id": "criterios-de-light",
+    "uniqueApiInputs": 35363,
+    "bankRows": 35364,
+    "executedInputRows": 35364,
+    "checks": 106096,
+    "notExposed": [
+      "Individual predicate flags: public API exposes count and any-positive only. Exact internal helper proof is recorded separately."
+    ],
+    "scope": "BTS2023 strict three-predicate arithmetic only: pleural/serum protein >1/2; pleural/serum LDH >3/5; pleural LDH >2/3 serum ULN; any-positive logic. Canonical shortest round-trip decimal Number.toString spelling. Not albumin-gradient, patient diagnosis, full-method validation or clinical approval.",
+    "clinicalApproval": "not-performed",
+    "professionalLanguageApproval": "not-performed",
+    "fullMethodConformance": "not-performed",
+    "sourceRightsApproval": "not-performed"
+  },
+  "stage": "prepared-not-published",
+  "id": "criterios-de-light",
+  "repository": "Elucenia/tool-criterios-de-light",
+  "build": {
+    "id": "6QpMzbnUBE2fep9nyJzTM",
+    "directory": ".next-private-final36",
+    "receiptSha256": "05823c22753741cd9947b8a5edad0c3f232f5cc4e935d1015837524ac6c34d0b"
+  },
+  "baseline": {
+    "parentCommitSha": "9d2b957011a1616ccf2d302113cb78a4aef02b21",
+    "baseTreeSha": "52639be3e11db39ec368358879490830a00576cf",
+    "indexBlobSha": "07abe6ec1b826533320c43c9c82fd2bf1b8ac480",
+    "protectedFiles": {
+      "LICENSE": {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      "NOTICE": {
+        "path": "NOTICE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c3cd9b7eab8bd1bf6da5de3c8d131bc9051f25e2",
+        "size": 1626,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/c3cd9b7eab8bd1bf6da5de3c8d131bc9051f25e2"
+      },
+      "AUTHORSHIP.md": {
+        "path": "AUTHORSHIP.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "184ebd59050e70dd81848cfb80d4c0716b461873",
+        "size": 3283,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/184ebd59050e70dd81848cfb80d4c0716b461873"
+      },
+      "CITATION.cff": {
+        "path": "CITATION.cff",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4d1723eebf5166e17103d290fa9c767933aac88d",
+        "size": 897,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/4d1723eebf5166e17103d290fa9c767933aac88d"
+      },
+      "SECURITY.md": {
+        "path": "SECURITY.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "size": 894,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+      },
+      "CONTRIBUTING.md": {
+        "path": "CONTRIBUTING.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0b35f01a1832dc66c6480937445aa84ed00cf4cd",
+        "size": 1469,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/0b35f01a1832dc66c6480937445aa84ed00cf4cd"
+      },
+      ".github/workflows/ci.yml": {
+        "path": ".github/workflows/ci.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "size": 279,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+      },
+      ".gitattributes": {
+        "path": ".gitattributes",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "size": 19,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+      },
+      ".gitignore": {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "size": 42,
+        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+      }
+    }
+  },
+  "methodSourceModules": [
+    "calculator.js"
+  ],
+  "implementationBrowserSha256": "cb8350ba7bdc2ba2534433349f31a401d97e3b8c5f235935455beb6bd5a2d2ab",
+  "localeDataSha256": "3f39b73875b1c0f1bb4b6196ed9ef42e11f422dcdc5749d4ba1d27acf905cc6c",
+  "originalStyleSha256": "8fd25e9dc1c0980e3b39b2375d36b96276eec3cbc24284cbc3cc01dc00a67a5c",
+  "originalIndexSha256": "627c1de8cd2e85d6490feade448ea2d3551072695f391e332570a7a6f830bf4b",
+  "example": {
+    "label": "Current source-owned complete UI/API fixture",
+    "input": {
+      "pt_pl": 4,
+      "pt_sr": 6,
+      "dhl_pl": 300,
+      "dhl_sr": 250,
+      "dhl_lsn": 220
+    },
+    "expected": {
+      "raw": {
+        "rp": 0.667,
+        "rd": 1.2,
+        "n": 3,
+        "exs": true
+      },
+      "tol": 0.01
+    },
+    "obtained": {
+      "id": "criterios-de-light",
+      "main": [
+        "Exsudato",
+        ""
+      ],
+      "label": "Critérios de Light",
+      "raw": {
+        "rp": 0.6666666666666666,
+        "rd": 1.2,
+        "exs": true,
+        "n": 3
+      },
+      "clinicalValidation": "not-performed"
+    },
+    "scope": "Source-owned example Node/browser wiring parity; not a new clinical oracle"
+  },
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed",
+  "documentationLocales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ar",
+    "zh",
+    "ja",
+    "hi"
+  ],
+  "documentationTemplateSha256": "ae4c41b39ab92a14adbfab83b946751a75c8168b5927e1f808d1c629ec032ea4",
+  "appWrites": false,
+  "externalMutations": false
+}

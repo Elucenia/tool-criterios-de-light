@@ -1,6 +1,16 @@
 [
   {
-    "label": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+    "id": "criterios-de-light",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+    "originalInput": {
+      "pt_pl": 4,
+      "pt_sr": 6,
+      "dhl_pl": 300,
+      "dhl_sr": 250,
+      "dhl_lsn": 220
+    },
     "input": {
       "pt_pl": 4,
       "pt_sr": 6,
@@ -8,6 +18,7 @@
       "dhl_sr": 250,
       "dhl_lsn": 220
     },
+    "amendments": [],
     "expected": {
       "raw": {
         "rp": 0.667,
@@ -18,17 +29,41 @@
       "level": "mid",
       "tol": 0.01
     },
-    "originalInput": {
-      "pt_pl": 4,
-      "pt_sr": 6,
-      "dhl_pl": 300,
-      "dhl_sr": 250,
-      "dhl_lsn": 220
+    "recordedResult": {
+      "main": [
+        "Exsudato",
+        ""
+      ],
+      "label": "Critérios de Light",
+      "raw": {
+        "rp": 0.6666666666666666,
+        "rd": 1.2,
+        "exs": true,
+        "n": 3,
+        "flags": [
+          true,
+          true,
+          true
+        ]
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+    "id": "criterios-de-light",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+    "originalInput": {
+      "pt_pl": 2,
+      "pt_sr": 7,
+      "dhl_pl": 100,
+      "dhl_sr": 200,
+      "dhl_lsn": 250
+    },
     "input": {
       "pt_pl": 2,
       "pt_sr": 7,
@@ -36,6 +71,7 @@
       "dhl_sr": 200,
       "dhl_lsn": 250
     },
+    "amendments": [],
     "expected": {
       "raw": {
         "rp": 0.286,
@@ -46,17 +82,41 @@
       "level": "low",
       "tol": 0.01
     },
-    "originalInput": {
-      "pt_pl": 2,
-      "pt_sr": 7,
-      "dhl_pl": 100,
-      "dhl_sr": 200,
-      "dhl_lsn": 250
+    "recordedResult": {
+      "main": [
+        "Transudato",
+        ""
+      ],
+      "label": "Critérios de Light",
+      "raw": {
+        "rp": 0.2857142857142857,
+        "rd": 0.5,
+        "exs": false,
+        "n": 0,
+        "flags": [
+          false,
+          false,
+          false
+        ]
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+    "id": "criterios-de-light",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+    "originalInput": {
+      "pt_pl": 3,
+      "pt_sr": 6,
+      "dhl_pl": 120,
+      "dhl_sr": 200,
+      "dhl_lsn": 180
+    },
     "input": {
       "pt_pl": 3,
       "pt_sr": 6,
@@ -64,6 +124,7 @@
       "dhl_sr": 200,
       "dhl_lsn": 180
     },
+    "amendments": [],
     "expected": {
       "raw": {
         "n": 0,
@@ -71,17 +132,43 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "pt_pl": 3,
-      "pt_sr": 6,
-      "dhl_pl": 120,
-      "dhl_sr": 200,
-      "dhl_lsn": 180
+    "recordedResult": {
+      "main": [
+        "Transudato",
+        ""
+      ],
+      "label": "Critérios de Light",
+      "raw": {
+        "rp": 0.5,
+        "rd": 0.6,
+        "exs": false,
+        "n": 0,
+        "flags": [
+          false,
+          false,
+          false
+        ]
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+    "id": "criterios-de-light",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+    "originalInput": {
+      "pt_pl": 2.5,
+      "pt_sr": 6.5,
+      "dhl_pl": 150,
+      "dhl_sr": 200,
+      "dhl_lsn": 300,
+      "alb_pl": 1.9,
+      "alb_sr": 3.5
+    },
     "input": {
       "pt_pl": 2.5,
       "pt_sr": 6.5,
@@ -91,6 +178,7 @@
       "alb_pl": 1.9,
       "alb_sr": 3.5
     },
+    "amendments": [],
     "expected": {
       "raw": {
         "rd": 0.75,
@@ -99,15 +187,27 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "pt_pl": 2.5,
-      "pt_sr": 6.5,
-      "dhl_pl": 150,
-      "dhl_sr": 200,
-      "dhl_lsn": 300,
-      "alb_pl": 1.9,
-      "alb_sr": 3.5
+    "recordedResult": {
+      "main": [
+        "Exsudato",
+        ""
+      ],
+      "label": "Critérios de Light",
+      "raw": {
+        "rp": 0.38461538461538464,
+        "rd": 0.75,
+        "exs": true,
+        "n": 1,
+        "flags": [
+          false,
+          true,
+          false
+        ]
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   }
 ]

@@ -1,0 +1,1258 @@
+{
+  "receipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
+    "bytes": 7105457,
+    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
+  },
+  "build": {
+    "id": "RYDdJbZxqrM8sgoyKEQc-",
+    "standaloneServer": {
+      "file": "reports/review-20261005-completion/deploy-lock/r5-isolated-runtime/.next/standalone/server.js",
+      "sha256": "631d43264038e7aa367b5405041eb3706d73fd3366925a7ef17a07119cfa166e",
+      "bytes": 10457
+    },
+    "catalogPin": {
+      "file": "deliveries/elucenia-next-hostinger-r5/.next/server/pages/en/tools.json",
+      "sha256": "33917dfdae9bea59cae22bfca34eaef2a21046a832af98c1a8d2718075de63ec",
+      "bytes": 103793
+    }
+  },
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r5 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "tool": {
+    "id": "criterios-de-light",
+    "title": "Critérios de Light",
+    "methodVersion": "Light 1972; variante BTS 2023: proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 do LSN sérico.",
+    "implementationVersion": "criterios-de-light@native-2026-10-03+3503a1b15963",
+    "sources": [
+      [
+        "Light RW et al. Pleural effusions: the diagnostic separation of transudates and exudates. Ann Intern Med, 1972.",
+        "https://doi.org/10.7326/0003-4819-77-4-507"
+      ],
+      [
+        "Light RW. Clinical practice. Pleural effusion. N Engl J Med, 2002.",
+        "https://doi.org/10.1056/NEJMcp010731"
+      ],
+      [
+        "BTS2023",
+        "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/"
+      ]
+    ],
+    "limits": "Esta implementação combina os critérios de Light com a variante documentada pela BTS 2023: LDH pleural acima de dois terços do limite superior sérico do laboratório, distinta do corte absoluto do artigo de 1972. Use amostras pleural e sérica pareadas e o limite do próprio laboratório; os cortes são estritamente maiores que os limiares. A classificação bioquímica não identifica a causa do derrame. O gradiente opcional de albumina é uma avaliação complementar e não deve, sozinho, substituir a investigação clínica.",
+    "sourceEditionEvidence": [
+      {
+        "citation": "Light RW et al. Pleural effusions: the diagnostic separation of transudates and exudates. Ann Intern Med, 1972.",
+        "url": "https://doi.org/10.7326/0003-4819-77-4-507",
+        "class": "primary-publication-abstract-or-metadata-read",
+        "publicationEditionConfirmed": true,
+        "fullTextRetrieved": false,
+        "formulaConformance": "not-assessed",
+        "publication": {
+          "title": "Pleural effusions: the diagnostic separation of transudates and exudates.",
+          "year": "1972",
+          "firstPublicationDate": "1972-10-01",
+          "doi": "10.7326/0003-4819-77-4-507",
+          "pmid": "4642731",
+          "journal": "Annals of internal medicine",
+          "authors": "Light RW, Macgregor MI, Luchsinger PC, Ball WC."
+        },
+        "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/4642731/",
+        "abstractAvailable": false,
+        "fullTextSha256": null,
+        "abstractSha256": null,
+        "matchedBy": "exact-DOI-or-PMID"
+      },
+      {
+        "citation": "Light RW. Clinical practice. Pleural effusion. N Engl J Med, 2002.",
+        "url": "https://doi.org/10.1056/NEJMcp010731",
+        "class": "primary-publication-abstract-or-metadata-read",
+        "publicationEditionConfirmed": true,
+        "fullTextRetrieved": false,
+        "formulaConformance": "not-assessed",
+        "publication": {
+          "title": "Clinical practice. Pleural effusion.",
+          "year": "2002",
+          "firstPublicationDate": "2002-06-01",
+          "doi": "10.1056/nejmcp010731",
+          "pmid": "12075059",
+          "journal": "The New England journal of medicine",
+          "authors": "Light RW."
+        },
+        "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/12075059/",
+        "abstractAvailable": false,
+        "fullTextSha256": null,
+        "abstractSha256": null,
+        "matchedBy": "exact-DOI-or-PMID"
+      }
+    ],
+    "calculator": {
+      "file": "deliveries/elucenia-next-hostinger-r5/private/tool-code/criterios-de-light/calculator.js",
+      "sha256": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3",
+      "bytes": 7084
+    },
+    "cases": 4,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "results": [
+    {
+      "id": "criterios-de-light",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+      "originalInput": {
+        "pt_pl": 4,
+        "pt_sr": 6,
+        "dhl_pl": 300,
+        "dhl_sr": 250,
+        "dhl_lsn": 220
+      },
+      "input": {
+        "pt_pl": 4,
+        "pt_sr": 6,
+        "dhl_pl": 300,
+        "dhl_sr": 250,
+        "dhl_lsn": 220
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "rp": 0.667,
+          "rd": 1.2,
+          "n": 3,
+          "exs": true
+        },
+        "level": "mid",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "Exsudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.6666666666666666,
+          "rd": 1.2,
+          "exs": true,
+          "n": 3,
+          "flags": [
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "pt_pl": 4,
+            "pt_sr": 6,
+            "dhl_pl": 300,
+            "dhl_sr": 250,
+            "dhl_lsn": 220
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+          "startedAt": "2026-10-05T15:13:22.847Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-light",
+              "main": [
+                "Exsudato",
+                ""
+              ],
+              "label": "Critérios de Light",
+              "raw": {
+                "rp": 0.6666666666666666,
+                "rd": 1.2,
+                "exs": true,
+                "n": 3,
+                "flags": [
+                  true,
+                  true,
+                  true
+                ]
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "2d9eb19a0d505d08f59891edc07650b8794a44f947d732a15f4570849dfb4bc5",
+          "bytes": 211,
+          "elapsedMs": 4.002999999996973
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+        "startedAt": "2026-10-05T15:13:22.847Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-light",
+            "main": [
+              "Exsudato",
+              ""
+            ],
+            "label": "Critérios de Light",
+            "raw": {
+              "rp": 0.6666666666666666,
+              "rd": 1.2,
+              "exs": true,
+              "n": 3,
+              "flags": [
+                true,
+                true,
+                true
+              ]
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "2d9eb19a0d505d08f59891edc07650b8794a44f947d732a15f4570849dfb4bc5",
+        "bytes": 211,
+        "elapsedMs": 4.002999999996973
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.rp",
+            "expected": 0.667,
+            "obtained": 0.6666666666666666,
+            "tolerance": 0.01,
+            "difference": 0.00033333333333340764,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.rd",
+            "expected": 1.2,
+            "obtained": 1.2,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.n",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.exs",
+            "expected": true,
+            "obtained": true,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rp",
+            "expected": 0.6666666666666666,
+            "obtained": 0.6666666666666666,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rd",
+            "expected": 1.2,
+            "obtained": 1.2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.exs",
+            "expected": true,
+            "obtained": true,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags.length",
+            "expected": 3,
+            "obtained": 3,
+            "passed": true,
+            "scope": "Existing source-audit transport regression"
+          },
+          {
+            "at": "regression.result.raw.flags[0]",
+            "expected": true,
+            "obtained": true,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags[1]",
+            "expected": true,
+            "obtained": true,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags[2]",
+            "expected": true,
+            "obtained": true,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Exsudato",
+            "obtained": "Exsudato",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-de-light",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+      "originalInput": {
+        "pt_pl": 2,
+        "pt_sr": 7,
+        "dhl_pl": 100,
+        "dhl_sr": 200,
+        "dhl_lsn": 250
+      },
+      "input": {
+        "pt_pl": 2,
+        "pt_sr": 7,
+        "dhl_pl": 100,
+        "dhl_sr": 200,
+        "dhl_lsn": 250
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "rp": 0.286,
+          "rd": 0.5,
+          "n": 0,
+          "exs": false
+        },
+        "level": "low",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "Transudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.2857142857142857,
+          "rd": 0.5,
+          "exs": false,
+          "n": 0,
+          "flags": [
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "pt_pl": 2,
+            "pt_sr": 7,
+            "dhl_pl": 100,
+            "dhl_sr": 200,
+            "dhl_lsn": 250
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+          "startedAt": "2026-10-05T15:13:23.158Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-light",
+              "main": [
+                "Transudato",
+                ""
+              ],
+              "label": "Critérios de Light",
+              "raw": {
+                "rp": 0.2857142857142857,
+                "rd": 0.5,
+                "exs": false,
+                "n": 0,
+                "flags": [
+                  false,
+                  false,
+                  false
+                ]
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "b99ffbb8e6930d62c272c3c1326395c138bb841a190f0e7dd6f3c73fff4070d3",
+          "bytes": 217,
+          "elapsedMs": 3.015800000001036
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+        "startedAt": "2026-10-05T15:13:23.158Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-light",
+            "main": [
+              "Transudato",
+              ""
+            ],
+            "label": "Critérios de Light",
+            "raw": {
+              "rp": 0.2857142857142857,
+              "rd": 0.5,
+              "exs": false,
+              "n": 0,
+              "flags": [
+                false,
+                false,
+                false
+              ]
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "b99ffbb8e6930d62c272c3c1326395c138bb841a190f0e7dd6f3c73fff4070d3",
+        "bytes": 217,
+        "elapsedMs": 3.015800000001036
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.rp",
+            "expected": 0.286,
+            "obtained": 0.2857142857142857,
+            "tolerance": 0.01,
+            "difference": 0.00028571428571427804,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.rd",
+            "expected": 0.5,
+            "obtained": 0.5,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.n",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.exs",
+            "expected": false,
+            "obtained": false,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rp",
+            "expected": 0.2857142857142857,
+            "obtained": 0.2857142857142857,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rd",
+            "expected": 0.5,
+            "obtained": 0.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.exs",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags.length",
+            "expected": 3,
+            "obtained": 3,
+            "passed": true,
+            "scope": "Existing source-audit transport regression"
+          },
+          {
+            "at": "regression.result.raw.flags[0]",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags[1]",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags[2]",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Transudato",
+            "obtained": "Transudato",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-de-light",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+      "originalInput": {
+        "pt_pl": 3,
+        "pt_sr": 6,
+        "dhl_pl": 120,
+        "dhl_sr": 200,
+        "dhl_lsn": 180
+      },
+      "input": {
+        "pt_pl": 3,
+        "pt_sr": 6,
+        "dhl_pl": 120,
+        "dhl_sr": 200,
+        "dhl_lsn": 180
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "n": 0,
+          "exs": false
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "Transudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.5,
+          "rd": 0.6,
+          "exs": false,
+          "n": 0,
+          "flags": [
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "pt_pl": 3,
+            "pt_sr": 6,
+            "dhl_pl": 120,
+            "dhl_sr": 200,
+            "dhl_lsn": 180
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+          "startedAt": "2026-10-05T15:13:23.470Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-light",
+              "main": [
+                "Transudato",
+                ""
+              ],
+              "label": "Critérios de Light",
+              "raw": {
+                "rp": 0.5,
+                "rd": 0.6,
+                "exs": false,
+                "n": 0,
+                "flags": [
+                  false,
+                  false,
+                  false
+                ]
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "a5c256c26b8cd0ae8b85513173575ffa585d20cbb9ae618cd08d060790184f40",
+          "bytes": 202,
+          "elapsedMs": 2.897400000001653
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+        "startedAt": "2026-10-05T15:13:23.470Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-light",
+            "main": [
+              "Transudato",
+              ""
+            ],
+            "label": "Critérios de Light",
+            "raw": {
+              "rp": 0.5,
+              "rd": 0.6,
+              "exs": false,
+              "n": 0,
+              "flags": [
+                false,
+                false,
+                false
+              ]
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "a5c256c26b8cd0ae8b85513173575ffa585d20cbb9ae618cd08d060790184f40",
+        "bytes": 202,
+        "elapsedMs": 2.897400000001653
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.n",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.exs",
+            "expected": false,
+            "obtained": false,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rp",
+            "expected": 0.5,
+            "obtained": 0.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rd",
+            "expected": 0.6,
+            "obtained": 0.6,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.exs",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags.length",
+            "expected": 3,
+            "obtained": 3,
+            "passed": true,
+            "scope": "Existing source-audit transport regression"
+          },
+          {
+            "at": "regression.result.raw.flags[0]",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags[1]",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags[2]",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Transudato",
+            "obtained": "Transudato",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "criterios-de-light",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+      "originalInput": {
+        "pt_pl": 2.5,
+        "pt_sr": 6.5,
+        "dhl_pl": 150,
+        "dhl_sr": 200,
+        "dhl_lsn": 300,
+        "alb_pl": 1.9,
+        "alb_sr": 3.5
+      },
+      "input": {
+        "pt_pl": 2.5,
+        "pt_sr": 6.5,
+        "dhl_pl": 150,
+        "dhl_sr": 200,
+        "dhl_lsn": 300,
+        "alb_pl": 1.9,
+        "alb_sr": 3.5
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "rd": 0.75,
+          "n": 1,
+          "exs": true
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "Exsudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.38461538461538464,
+          "rd": 0.75,
+          "exs": true,
+          "n": 1,
+          "flags": [
+            false,
+            true,
+            false
+          ]
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "pt_pl": 2.5,
+            "pt_sr": 6.5,
+            "dhl_pl": 150,
+            "dhl_sr": 200,
+            "dhl_lsn": 300,
+            "alb_pl": 1.9,
+            "alb_sr": 3.5
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+          "startedAt": "2026-10-05T15:13:23.781Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "criterios-de-light",
+              "main": [
+                "Exsudato",
+                ""
+              ],
+              "label": "Critérios de Light",
+              "raw": {
+                "rp": 0.38461538461538464,
+                "rd": 0.75,
+                "exs": true,
+                "n": 1,
+                "flags": [
+                  false,
+                  true,
+                  false
+                ]
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "d4cf9d96e97015f4b8095c04ff23a3c9b78d1913334229e48b3966a0ffeb7a87",
+          "bytes": 215,
+          "elapsedMs": 3.586699999999837
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/criterios-de-light/calculate",
+        "startedAt": "2026-10-05T15:13:23.781Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "criterios-de-light",
+            "main": [
+              "Exsudato",
+              ""
+            ],
+            "label": "Critérios de Light",
+            "raw": {
+              "rp": 0.38461538461538464,
+              "rd": 0.75,
+              "exs": true,
+              "n": 1,
+              "flags": [
+                false,
+                true,
+                false
+              ]
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "d4cf9d96e97015f4b8095c04ff23a3c9b78d1913334229e48b3966a0ffeb7a87",
+        "bytes": 215,
+        "elapsedMs": 3.586699999999837
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.rd",
+            "expected": 0.75,
+            "obtained": 0.75,
+            "tolerance": 0.00500001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.n",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.exs",
+            "expected": true,
+            "obtained": true,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rp",
+            "expected": 0.38461538461538464,
+            "obtained": 0.38461538461538464,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.rd",
+            "expected": 0.75,
+            "obtained": 0.75,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.exs",
+            "expected": true,
+            "obtained": true,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.n",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags.length",
+            "expected": 3,
+            "obtained": 3,
+            "passed": true,
+            "scope": "Existing source-audit transport regression"
+          },
+          {
+            "at": "regression.result.raw.flags[0]",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags[1]",
+            "expected": true,
+            "obtained": true,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.flags[2]",
+            "expected": false,
+            "obtained": false,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Exsudato",
+            "obtained": "Exsudato",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "endBindings": true
+}

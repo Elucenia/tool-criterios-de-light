@@ -1,0 +1,791 @@
+{
+  "at": "2026-10-05T15:24:35.889Z",
+  "id": "criterios-de-light",
+  "engine": {
+    "file": "apps/website/private/tool-code/criterios-de-light/calculator.js",
+    "bytes": 7084,
+    "sha256": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3"
+  },
+  "sourceParity": "Node current source / per-tool browser VM outputs match",
+  "cases": [
+    {
+      "id": "criterios-de-light",
+      "index": 0,
+      "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+      "input": {
+        "pt_pl": 4,
+        "pt_sr": 6,
+        "dhl_pl": 300,
+        "dhl_sr": 250,
+        "dhl_lsn": 220
+      },
+      "expected": {
+        "raw": {
+          "rp": 0.667,
+          "rd": 1.2,
+          "n": 3,
+          "exs": true
+        },
+        "level": "mid",
+        "tol": 0.01
+      },
+      "obtained": {
+        "id": "criterios-de-light",
+        "main": [
+          "Exsudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.6666666666666666,
+          "rd": 1.2,
+          "exs": true,
+          "n": 3,
+          "flags": [
+            true,
+            true,
+            true
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "browserVm": {
+        "id": "criterios-de-light",
+        "main": [
+          "Exsudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.6666666666666666,
+          "rd": 1.2,
+          "exs": true,
+          "n": 3,
+          "flags": [
+            true,
+            true,
+            true
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.rp",
+          "expected": 0.667,
+          "obtained": 0.6666666666666666,
+          "tolerance": 0.01,
+          "difference": 0.00033333333333340764,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.rd",
+          "expected": 1.2,
+          "obtained": 1.2,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.n",
+          "expected": 3,
+          "obtained": 3,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.exs",
+          "expected": true,
+          "obtained": true,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rp",
+          "expected": 0.6666666666666666,
+          "obtained": 0.6666666666666666,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rd",
+          "expected": 1.2,
+          "obtained": 1.2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.exs",
+          "expected": true,
+          "obtained": true,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n",
+          "expected": 3,
+          "obtained": 3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags.length",
+          "expected": 3,
+          "obtained": 3,
+          "passed": true,
+          "scope": "Existing source-audit transport regression"
+        },
+        {
+          "at": "regression.result.raw.flags[0]",
+          "expected": true,
+          "obtained": true,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags[1]",
+          "expected": true,
+          "obtained": true,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags[2]",
+          "expected": true,
+          "obtained": true,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Exsudato",
+          "obtained": "Exsudato",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "criterios-de-light",
+      "index": 1,
+      "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+      "input": {
+        "pt_pl": 2,
+        "pt_sr": 7,
+        "dhl_pl": 100,
+        "dhl_sr": 200,
+        "dhl_lsn": 250
+      },
+      "expected": {
+        "raw": {
+          "rp": 0.286,
+          "rd": 0.5,
+          "n": 0,
+          "exs": false
+        },
+        "level": "low",
+        "tol": 0.01
+      },
+      "obtained": {
+        "id": "criterios-de-light",
+        "main": [
+          "Transudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.2857142857142857,
+          "rd": 0.5,
+          "exs": false,
+          "n": 0,
+          "flags": [
+            false,
+            false,
+            false
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "browserVm": {
+        "id": "criterios-de-light",
+        "main": [
+          "Transudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.2857142857142857,
+          "rd": 0.5,
+          "exs": false,
+          "n": 0,
+          "flags": [
+            false,
+            false,
+            false
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.rp",
+          "expected": 0.286,
+          "obtained": 0.2857142857142857,
+          "tolerance": 0.01,
+          "difference": 0.00028571428571427804,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.rd",
+          "expected": 0.5,
+          "obtained": 0.5,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.n",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.exs",
+          "expected": false,
+          "obtained": false,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rp",
+          "expected": 0.2857142857142857,
+          "obtained": 0.2857142857142857,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rd",
+          "expected": 0.5,
+          "obtained": 0.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.exs",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags.length",
+          "expected": 3,
+          "obtained": 3,
+          "passed": true,
+          "scope": "Existing source-audit transport regression"
+        },
+        {
+          "at": "regression.result.raw.flags[0]",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags[1]",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags[2]",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Transudato",
+          "obtained": "Transudato",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "criterios-de-light",
+      "index": 2,
+      "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+      "input": {
+        "pt_pl": 3,
+        "pt_sr": 6,
+        "dhl_pl": 120,
+        "dhl_sr": 200,
+        "dhl_lsn": 180
+      },
+      "expected": {
+        "raw": {
+          "n": 0,
+          "exs": false
+        },
+        "level": "low"
+      },
+      "obtained": {
+        "id": "criterios-de-light",
+        "main": [
+          "Transudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.5,
+          "rd": 0.6,
+          "exs": false,
+          "n": 0,
+          "flags": [
+            false,
+            false,
+            false
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "browserVm": {
+        "id": "criterios-de-light",
+        "main": [
+          "Transudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.5,
+          "rd": 0.6,
+          "exs": false,
+          "n": 0,
+          "flags": [
+            false,
+            false,
+            false
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.n",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.exs",
+          "expected": false,
+          "obtained": false,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rp",
+          "expected": 0.5,
+          "obtained": 0.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rd",
+          "expected": 0.6,
+          "obtained": 0.6,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.exs",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags.length",
+          "expected": 3,
+          "obtained": 3,
+          "passed": true,
+          "scope": "Existing source-audit transport regression"
+        },
+        {
+          "at": "regression.result.raw.flags[0]",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags[1]",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags[2]",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Transudato",
+          "obtained": "Transudato",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "criterios-de-light",
+      "index": 3,
+      "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+      "input": {
+        "pt_pl": 2.5,
+        "pt_sr": 6.5,
+        "dhl_pl": 150,
+        "dhl_sr": 200,
+        "dhl_lsn": 300,
+        "alb_pl": 1.9,
+        "alb_sr": 3.5
+      },
+      "expected": {
+        "raw": {
+          "rd": 0.75,
+          "n": 1,
+          "exs": true
+        },
+        "level": "mid"
+      },
+      "obtained": {
+        "id": "criterios-de-light",
+        "main": [
+          "Exsudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.38461538461538464,
+          "rd": 0.75,
+          "exs": true,
+          "n": 1,
+          "flags": [
+            false,
+            true,
+            false
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "browserVm": {
+        "id": "criterios-de-light",
+        "main": [
+          "Exsudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.38461538461538464,
+          "rd": 0.75,
+          "exs": true,
+          "n": 1,
+          "flags": [
+            false,
+            true,
+            false
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.rd",
+          "expected": 0.75,
+          "obtained": 0.75,
+          "tolerance": 0.00500001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.n",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.exs",
+          "expected": true,
+          "obtained": true,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rp",
+          "expected": 0.38461538461538464,
+          "obtained": 0.38461538461538464,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rd",
+          "expected": 0.75,
+          "obtained": 0.75,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.exs",
+          "expected": true,
+          "obtained": true,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags.length",
+          "expected": 3,
+          "obtained": 3,
+          "passed": true,
+          "scope": "Existing source-audit transport regression"
+        },
+        {
+          "at": "regression.result.raw.flags[0]",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags[1]",
+          "expected": true,
+          "obtained": true,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.flags[2]",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "Exsudato",
+          "obtained": "Exsudato",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "summary": {
+    "cases": 4,
+    "passed": 4,
+    "failed": 0,
+    "checks": 65
+  },
+  "newIndependentOracle": false,
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

@@ -5,6 +5,7 @@
     "short": "Derrame pleural: transudato ou exsudato",
     "desc": "Aplique os critérios de Light ao derrame pleural (proteína e DHL no líquido e no soro) para diferenciar transudato de exsudato, com gradiente de albumina.",
     "lead": "Diferencia transudato de exsudato no líquido pleural a partir da proteína e da desidrogenase lática (DHL) do líquido e do soro.",
+    "kind": "Calculadora",
     "spec": [
       "pneumologia",
       "cirurgia-toracica",
@@ -97,26 +98,6 @@
       ]
     ],
     "formula": "<p>É <strong>exsudato</strong> se houver <strong>pelo menos um</strong> critério:</p><ul><li>proteína pleural / proteína sérica &gt; 0,5;</li><li>DHL pleural / DHL sérica &gt; 0,6;</li><li>DHL pleural &gt; 2/3 do limite superior normal da DHL sérica.</li></ul><p>Se nenhum estiver presente, é transudato. <strong>Gradiente de albumina</strong> (soro − pleura) &gt; 1,2 g/dL sugere transudato mesmo com Light positivo.</p>",
-    "table": [
-      [
-        "Tipo",
-        "Causas mais comuns"
-      ],
-      [
-        "Transudato",
-        "Insuficiência cardíaca, cirrose (hidrotórax hepático), síndrome nefrótica, hipoalbuminemia, diálise peritoneal"
-      ],
-      [
-        "Exsudato",
-        "Parapneumônico/empiema, neoplasia, tuberculose, TEP, doenças autoimunes, pancreatite"
-      ]
-    ],
-    "tips": [
-      "Os critérios de Light têm sensibilidade de ~98% para exsudato, mas classificam como exsudato cerca de 25% dos transudatos, sobretudo em quem usa diurético.",
-      "Na insuficiência cardíaca tratada com diurético e Light \"positivo\" por pouco, use o gradiente de albumina (&gt; 1,2 g/dL) ou de proteína (&gt; 3,1 g/dL) para confirmar transudato.",
-      "Todo exsudato pede investigação: pH, glicose, celularidade diferencial, citologia oncótica, bacterioscopia/cultura e ADA (tuberculose).",
-      "pH &lt; 7,20 ou glicose &lt; 60 mg/dL em derrame parapneumônico indica drenagem torácica."
-    ],
     "sources": [
       [
         "Light RW et al. Pleural effusions: the diagnostic separation of transudates and exudates. Ann Intern Med, 1972.",
@@ -125,6 +106,10 @@
       [
         "Light RW. Clinical practice. Pleural effusion. N Engl J Med, 2002.",
         "https://doi.org/10.1056/NEJMcp010731"
+      ],
+      [
+        "BTS2023",
+        "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/"
       ]
     ],
     "cases": [
@@ -206,9 +191,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -217,17 +199,488 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T14:59:12.778Z",
+      "total": 35364,
+      "passed": 35364,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "4f30520e7c7992147d22810c2329f0f5c9e000455e193b9e7112b75617bdf0e5",
+        "total": 35364,
+        "expectedEvidence": {
+          "file": "reports/review-20261003/light-exact-decimal-expectations-final25-v2-r2.json",
+          "sha256": "344e3d0d035186c456e7130349f5e08042d1bf360c2c99bd06890a069016b66b"
+        },
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/light-exact-decimal-candidate-check-final25-v2-r2.json",
+          "sha256": "d1f6a1b9a2e49000edf74c80c1e0a94f8cd29e52f6ba4a0b228e8a44fdbcbcf1"
+        },
+        "packagingRequirement": "Copy the complete bank into the newly generated tool package. The old frozen24 package is not amended by this source candidate.",
+        "bankRowCount": 35364,
+        "uniqueApiInputCount": 35363,
+        "sourceContextCount": 35364,
+        "countDefinition": "total and bankRowCount retain35364 recorded scenarios; uniqueApiInputCount is35363 distinct stored JSON objects. Complete corpus rows are not deleted."
+      },
+      "evidencePath": "reports/review-20261003/light-exact-decimal-candidate-check-final25-v2-r2.json",
+      "evidenceSha256": "d1f6a1b9a2e49000edf74c80c1e0a94f8cd29e52f6ba4a0b228e8a44fdbcbcf1",
+      "peerEvidencePath": "reports/review-20261003/light-exact-decimal-independent-review-final25-v2-r2.json",
+      "peerEvidenceSha256": "17226a32ebd127693db785aee1e4db7393fd5a6cf17e05efa97354cbfe67910d",
+      "scope": "BTS2023 strict three-predicate arithmetic only: pleural/serum protein >1/2; pleural/serum LDH >3/5; pleural LDH >2/3 serum ULN; any-positive logic. Canonical shortest round-trip decimal Number.toString spelling. Not albumin-gradient, patient diagnosis, full-method validation or clinical approval.",
+      "source": {
+        "url": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/",
+        "access": "Direct primary official PDF re-opened in web; actual local rendered pages 43 and61 viewed independently. Web zero-based pages42/60; printed35/50.",
+        "readScope": "Only Table1 Light predicates and Clinical Statement Table2 same three predicates, with matching specimen quantities. Strictly greater 1/2,3/5,2/3 and any-positive logic confirmed. No clinical validation, original1972 fulltext, albumin-gradient threshold, patient outcomes or whole guideline review performed.",
+        "pdf": {
+          "file": "limited-primary-bts2023-final24.pdf",
+          "sha256": "1b4a12871afa7fe182faa5dde24b0309d9db74dd8c757377b5439ef5b69bd9f7"
+        },
+        "edition": "BTS2023, Table1 printed35 and Clinical Statement Table2 printed50"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/criterios-de-light/calculator.js",
+          "beforeSha256": "b9d1087c48bab8a4fde633c9a8229c4b20203ec26eeb075f837b336c5905c708",
+          "afterSha256": "e32dab788b0d084de502d159d1abf8101f35f60682909b8dcbfc4df74cc3357b",
+          "sourceInputs": 35364,
+          "ownInputs": 161,
+          "baselineCategoricalDifferences": 2177,
+          "originalCasesUnchanged": 4,
+          "preciseReversibleDelta": true
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/criterios-de-light/calculator.js",
+          "beforeSha256": "b9d1087c48bab8a4fde633c9a8229c4b20203ec26eeb075f837b336c5905c708",
+          "afterSha256": "e32dab788b0d084de502d159d1abf8101f35f60682909b8dcbfc4df74cc3357b",
+          "sourceInputs": 35364,
+          "ownInputs": 161,
+          "baselineCategoricalDifferences": 2177,
+          "originalCasesUnchanged": 4,
+          "preciseReversibleDelta": true
+        },
+        {
+          "file": "apps/command-center/private/tool-code/criterios-de-light/calculator.js",
+          "beforeSha256": "b9d1087c48bab8a4fde633c9a8229c4b20203ec26eeb075f837b336c5905c708",
+          "afterSha256": "e32dab788b0d084de502d159d1abf8101f35f60682909b8dcbfc4df74cc3357b",
+          "sourceInputs": 35364,
+          "ownInputs": 161,
+          "baselineCategoricalDifferences": 2177,
+          "originalCasesUnchanged": 4,
+          "preciseReversibleDelta": true
+        },
+        {
+          "file": "apps/command-center/private/medical-calc/torax-vascular.js",
+          "beforeSha256": "a89e85e6b2dba9fa018ad74e8e2cbe781ff2ad8092ebd17a7d0660207921d24f",
+          "afterSha256": "c3b00e8143e6a8bd7db15ae75ecb46923034f88578b452438a7602716fb3b2f7",
+          "sourceInputs": 35364,
+          "ownInputs": 161,
+          "baselineCategoricalDifferences": 2177,
+          "originalCasesUnchanged": 4,
+          "preciseReversibleDelta": true
+        }
+      ],
+      "executionCount": 141456,
+      "primitiveExpectationCount": 21168,
+      "qualifications": [
+        "Numbers have already crossed the JS API Number boundary. Arbitrarily long user lexical decimals that are rounded to the same Number cannot be recovered.",
+        "The new predicate uses canonical shortest round-trip decimal spelling rather than exact binary64 significand value. This preserves laboratory decimal equality such as16.8/28=0.6.",
+        "No clinically validated eligibility, patient population performance, instrument rights or full-method conformance inferred.",
+        "Full35364-case expected/obtained evidence is in the hashed download file; four inline examples are a declared subset.",
+        "Original final24 categorical failures and the rejected IEEE-only V1 peer remain preserved. No historical fixture or tolerance has changed.",
+        "Complete bank retains35,364 recorded scenarios and all existing numerical proofs; one exact API-input duplicate is preserved. It contains35,363 distinct input objects. This count amendment changes no source expectation, predicate, result, tolerance, status or approval."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "sourceRowCount": 35364,
+      "uniqueApiInputCount": 35363,
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "audit": {
+          "file": "reports/review-20261003/independent-source-corpus-input-identity-audit-final25.json",
+          "sha256": "35d65e84c5608a5f572fce6837f0a8c101b2266f5d6eec32a3d60d2bb6b022ca"
+        },
+        "sourceRows": 35364,
+        "uniqueApiInputs": 35363,
+        "duplicateRows": 1,
+        "duplicates": [
+          {
+            "first": 3,
+            "repeat": 21194,
+            "input": {
+              "pt_pl": 1,
+              "pt_sr": 8,
+              "dhl_pl": 16.8,
+              "dhl_sr": 28,
+              "dhl_lsn": 1000
+            }
+          }
+        ],
+        "coverageStatusUnchanged": true
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Light 1972; variante BTS 2023: proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 do LSN sérico.",
+    "implementationVersion": "criterios-de-light@native-2026-10-03+3503a1b15963",
+    "currentMethodSource": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "É exsudato se houver pelo menos um critério: proteína pleural / proteína sérica > 0,5; DHL pleural / DHL sérica > 0,6; DHL pleural > 2/3 do limite superior normal da DHL sérica. Se nenhum estiver presente, é transudato. Gradiente de albumina (soro − pleura) > 1,2 g/dL sugere transudato mesmo com Light positivo.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "pt_pl",
+            "label": "Proteína no líquido pleural",
+            "type": "num",
+            "min": 0.1,
+            "max": 10,
+            "unit": "g/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pt_sr",
+            "label": "Proteína sérica",
+            "type": "num",
+            "min": 1,
+            "max": 12,
+            "unit": "g/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dhl_pl",
+            "label": "DHL no líquido pleural",
+            "type": "num",
+            "min": 10,
+            "max": 20000,
+            "unit": "U/L",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dhl_sr",
+            "label": "DHL sérica",
+            "type": "num",
+            "min": 10,
+            "max": 5000,
+            "unit": "U/L",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dhl_lsn",
+            "label": "Limite superior da normalidade da DHL sérica (do laboratório)",
+            "type": "num",
+            "min": 100,
+            "max": 1000,
+            "unit": "U/L",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "alb_pl",
+            "label": "Albumina no líquido pleural",
+            "type": "num",
+            "min": 0.1,
+            "max": 6,
+            "unit": "g/dL",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "alb_sr",
+            "label": "Albumina sérica",
+            "type": "num",
+            "min": 0.5,
+            "max": 6,
+            "unit": "g/dL",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "aefcb28ee1387e42ba1409538889035653f7a18aec0c07575b4aa606e7a46fbb"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Light RW et al. Pleural effusions: the diagnostic separation of transudates and exudates. Ann Intern Med, 1972.",
+          "url": "https://doi.org/10.7326/0003-4819-77-4-507",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Pleural effusions: the diagnostic separation of transudates and exudates.",
+            "year": "1972",
+            "firstPublicationDate": "1972-10-01",
+            "doi": "10.7326/0003-4819-77-4-507",
+            "pmid": "4642731",
+            "journal": "Annals of internal medicine",
+            "authors": "Light RW, Macgregor MI, Luchsinger PC, Ball WC."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/4642731/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Light RW. Clinical practice. Pleural effusion. N Engl J Med, 2002.",
+          "url": "https://doi.org/10.1056/NEJMcp010731",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Clinical practice. Pleural effusion.",
+            "year": "2002",
+            "firstPublicationDate": "2002-06-01",
+            "doi": "10.1056/nejmcp010731",
+            "pmid": "12075059",
+            "journal": "The New England journal of medicine",
+            "authors": "Light RW."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/12075059/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T14:59:12.778Z",
+        "total": 35364,
+        "passed": 35364,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "4f30520e7c7992147d22810c2329f0f5c9e000455e193b9e7112b75617bdf0e5",
+          "total": 35364,
+          "expectedEvidence": {
+            "file": "reports/review-20261003/light-exact-decimal-expectations-final25-v2-r2.json",
+            "sha256": "344e3d0d035186c456e7130349f5e08042d1bf360c2c99bd06890a069016b66b"
+          },
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/light-exact-decimal-candidate-check-final25-v2-r2.json",
+            "sha256": "d1f6a1b9a2e49000edf74c80c1e0a94f8cd29e52f6ba4a0b228e8a44fdbcbcf1"
+          },
+          "packagingRequirement": "Copy the complete bank into the newly generated tool package. The old frozen24 package is not amended by this source candidate.",
+          "bankRowCount": 35364,
+          "uniqueApiInputCount": 35363,
+          "sourceContextCount": 35364,
+          "countDefinition": "total and bankRowCount retain35364 recorded scenarios; uniqueApiInputCount is35363 distinct stored JSON objects. Complete corpus rows are not deleted."
+        },
+        "evidencePath": "reports/review-20261003/light-exact-decimal-candidate-check-final25-v2-r2.json",
+        "evidenceSha256": "d1f6a1b9a2e49000edf74c80c1e0a94f8cd29e52f6ba4a0b228e8a44fdbcbcf1",
+        "peerEvidencePath": "reports/review-20261003/light-exact-decimal-independent-review-final25-v2-r2.json",
+        "peerEvidenceSha256": "17226a32ebd127693db785aee1e4db7393fd5a6cf17e05efa97354cbfe67910d",
+        "scope": "BTS2023 strict three-predicate arithmetic only: pleural/serum protein >1/2; pleural/serum LDH >3/5; pleural LDH >2/3 serum ULN; any-positive logic. Canonical shortest round-trip decimal Number.toString spelling. Not albumin-gradient, patient diagnosis, full-method validation or clinical approval.",
+        "source": {
+          "url": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/",
+          "access": "Direct primary official PDF re-opened in web; actual local rendered pages 43 and61 viewed independently. Web zero-based pages42/60; printed35/50.",
+          "readScope": "Only Table1 Light predicates and Clinical Statement Table2 same three predicates, with matching specimen quantities. Strictly greater 1/2,3/5,2/3 and any-positive logic confirmed. No clinical validation, original1972 fulltext, albumin-gradient threshold, patient outcomes or whole guideline review performed.",
+          "pdf": {
+            "file": "limited-primary-bts2023-final24.pdf",
+            "sha256": "1b4a12871afa7fe182faa5dde24b0309d9db74dd8c757377b5439ef5b69bd9f7"
+          },
+          "edition": "BTS2023, Table1 printed35 and Clinical Statement Table2 printed50"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-light/calculator.js",
+            "beforeSha256": "b9d1087c48bab8a4fde633c9a8229c4b20203ec26eeb075f837b336c5905c708",
+            "afterSha256": "e32dab788b0d084de502d159d1abf8101f35f60682909b8dcbfc4df74cc3357b",
+            "sourceInputs": 35364,
+            "ownInputs": 161,
+            "baselineCategoricalDifferences": 2177,
+            "originalCasesUnchanged": 4,
+            "preciseReversibleDelta": true
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-light/calculator.js",
+            "beforeSha256": "b9d1087c48bab8a4fde633c9a8229c4b20203ec26eeb075f837b336c5905c708",
+            "afterSha256": "e32dab788b0d084de502d159d1abf8101f35f60682909b8dcbfc4df74cc3357b",
+            "sourceInputs": 35364,
+            "ownInputs": 161,
+            "baselineCategoricalDifferences": 2177,
+            "originalCasesUnchanged": 4,
+            "preciseReversibleDelta": true
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-light/calculator.js",
+            "beforeSha256": "b9d1087c48bab8a4fde633c9a8229c4b20203ec26eeb075f837b336c5905c708",
+            "afterSha256": "e32dab788b0d084de502d159d1abf8101f35f60682909b8dcbfc4df74cc3357b",
+            "sourceInputs": 35364,
+            "ownInputs": 161,
+            "baselineCategoricalDifferences": 2177,
+            "originalCasesUnchanged": 4,
+            "preciseReversibleDelta": true
+          },
+          {
+            "file": "apps/command-center/private/medical-calc/torax-vascular.js",
+            "beforeSha256": "a89e85e6b2dba9fa018ad74e8e2cbe781ff2ad8092ebd17a7d0660207921d24f",
+            "afterSha256": "c3b00e8143e6a8bd7db15ae75ecb46923034f88578b452438a7602716fb3b2f7",
+            "sourceInputs": 35364,
+            "ownInputs": 161,
+            "baselineCategoricalDifferences": 2177,
+            "originalCasesUnchanged": 4,
+            "preciseReversibleDelta": true
+          }
+        ],
+        "executionCount": 141456,
+        "primitiveExpectationCount": 21168,
+        "qualifications": [
+          "Numbers have already crossed the JS API Number boundary. Arbitrarily long user lexical decimals that are rounded to the same Number cannot be recovered.",
+          "The new predicate uses canonical shortest round-trip decimal spelling rather than exact binary64 significand value. This preserves laboratory decimal equality such as16.8/28=0.6.",
+          "No clinically validated eligibility, patient population performance, instrument rights or full-method conformance inferred.",
+          "Full35364-case expected/obtained evidence is in the hashed download file; four inline examples are a declared subset.",
+          "Original final24 categorical failures and the rejected IEEE-only V1 peer remain preserved. No historical fixture or tolerance has changed.",
+          "Complete bank retains35,364 recorded scenarios and all existing numerical proofs; one exact API-input duplicate is preserved. It contains35,363 distinct input objects. This count amendment changes no source expectation, predicate, result, tolerance, status or approval."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "sourceRowCount": 35364,
+        "uniqueApiInputCount": 35363,
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "audit": {
+            "file": "reports/review-20261003/independent-source-corpus-input-identity-audit-final25.json",
+            "sha256": "35d65e84c5608a5f572fce6837f0a8c101b2266f5d6eec32a3d60d2bb6b022ca"
+          },
+          "sourceRows": 35364,
+          "uniqueApiInputs": 35363,
+          "duplicateRows": 1,
+          "duplicates": [
+            {
+              "first": 3,
+              "repeat": 21194,
+              "input": {
+                "pt_pl": 1,
+                "pt_sr": 8,
+                "dhl_pl": 16.8,
+                "dhl_sr": 28,
+                "dhl_lsn": 1000
+              }
+            }
+          ],
+          "coverageStatusUnchanged": true
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3",
+      "documentaryEditionAmendment": {
+        "recordedAt": "2026-10-04T13:40:42.995Z",
+        "source": "Light 1972; variante BTS 2023: proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 do LSN sérico.",
+        "scope": "Explicit attribution of the implemented variant; not full-method or clinical approval.",
+        "previousCurrentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/4642731/",
+        "currentMethodSource": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/"
+      },
+      "numericalRepairAmendment": {
+        "recordedAt": "2026-10-04T15:09:08.447Z",
+        "variant": "Canonical shortest-round-trip decimal strict comparators; BTS2023 three-predicate arithmetic",
+        "candidate": {
+          "file": "reports/review-20261003/light-exact-decimal-candidate-final25-v2-r2.json",
+          "sha256": "0c8ee4e6b8a64fd6b3b7be94aff89a73db1636feddf52c59c791aeb90fbb340c"
+        },
+        "peer": {
+          "file": "reports/review-20261003/light-exact-decimal-independent-review-final25-v2-r2.json",
+          "sha256": "17226a32ebd127693db785aee1e4db7393fd5a6cf17e05efa97354cbfe67910d"
+        },
+        "beforeHash": "b9d1087c48bab8a4fde633c9a8229c4b20203ec26eeb075f837b336c5905c708",
+        "afterHash": "e32dab788b0d084de502d159d1abf8101f35f60682909b8dcbfc4df74cc3357b",
+        "sourceAccess": {
+          "url": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/",
+          "access": "Direct primary official PDF re-opened in web; actual local rendered pages 43 and61 viewed independently. Web zero-based pages42/60; printed35/50.",
+          "readScope": "Only Table1 Light predicates and Clinical Statement Table2 same three predicates, with matching specimen quantities. Strictly greater 1/2,3/5,2/3 and any-positive logic confirmed. No clinical validation, original1972 fulltext, albumin-gradient threshold, patient outcomes or whole guideline review performed.",
+          "pdf": {
+            "file": "limited-primary-bts2023-final24.pdf",
+            "sha256": "1b4a12871afa7fe182faa5dde24b0309d9db74dd8c757377b5439ef5b69bd9f7"
+          },
+          "edition": "BTS2023, Table1 printed35 and Clinical Statement Table2 printed50"
+        },
+        "scope": "BTS2023 strict three-predicate arithmetic only: pleural/serum protein >1/2; pleural/serum LDH >3/5; pleural LDH >2/3 serum ULN; any-positive logic. Canonical shortest round-trip decimal Number.toString spelling. Not albumin-gradient, patient diagnosis, full-method validation or clinical approval.",
+        "originalSourceCasesPreserved": true,
+        "originalTolerancesPreserved": true,
+        "rejectedIEEEOnlyV1Preserved": true,
+        "fullMethodConformance": "not-performed",
+        "clinicalApproval": "not-performed"
+      },
+      "implementationUpdatedAt": "2026-10-05T13:02:54.731Z",
+      "currentImplementationIdentityEvidence": {
+        "file": "reports/review-20261003/current-implementation-identities-application-final45.json",
+        "scope": "Exact current adapter bytes. Method edition, inputs, mathematical expressions, bibliographic checks, source-case history and approval statuses unchanged by this metadata correction."
+      }
+    },
+    "limits": "Esta implementação combina os critérios de Light com a variante documentada pela BTS 2023: LDH pleural acima de dois terços do limite superior sérico do laboratório, distinta do corte absoluto do artigo de 1972. Use amostras pleural e sérica pareadas e o limite do próprio laboratório; os cortes são estritamente maiores que os limiares. A classificação bioquímica não identifica a causa do derrame. O gradiente opcional de albumina é uma avaliação complementar e não deve, sozinho, substituir a investigação clínica.",
+    "limitsEvidence": {
+      "status": "direct-primary-later-variant-tables-visually-read",
+      "sources": [
+        {
+          "url": "https://doi.org/10.7326/0003-4819-77-4-507",
+          "edition": "Light1972",
+          "readScope": "Inherited Western exact publisher-indexed original abstract:150effusions,47transudates/103exudates; absolute pleuralLDH>200IU in original. Full article not read.",
+          "inheritedEvidence": "remaining46-verify-source-handoff-final23.json"
+        },
+        {
+          "url": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/",
+          "edition": "BTS2023",
+          "readScope": "Direct primary PDF,printedp35 Table1 and clinical statement printedp50 Table2 (PDF43 and61), all Light thresholds and paired biochemical samples; tables visually read. Not entire81page supplement.",
+          "capture": [
+            "primary-verify-limits-final23/light-bts2023-p43.png",
+            "primary-verify-limits-final23/light-bts2023-p61.png"
+          ],
+          "pdfSha256": "1b4a12871afa7fe182faa5dde24b0309d9db74dd8c757377b5439ef5b69bd9f7"
+        }
+      ],
+      "populationScope": "Pleural effusion biochemical classification with paired pleural/serum samples.",
+      "remainingChecks": [
+        "Original1972 full paper not read.",
+        "Optional albumin-gradient derivation/cohort not newly verified.",
+        "No universal etiologic or diuretic-related reclassification approval."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
+    },
+    "implementationUpdatedAt": "2026-10-05T13:02:54.731Z"
+  },
+  "sourceToolSha256": "ec32fcda042319f77dc7582f7768b66d11e33795fe153c22f09f8cbc2ef2ac8f",
+  "omittedFullReferenceBanks": [
+    {
+      "at": "independentArithmeticTest.cases",
+      "rows": 4,
+      "sha256": "94d6fe5f13b74983117727cc7b2b03a501a13453c762630af8fcf348f29ef2bf",
+      "reason": "Full independent reference bank omitted from standalone public candidate; original evidence references retained"
+    },
+    {
+      "at": "versionEvidence.independentArithmetic.cases",
+      "rows": 4,
+      "sha256": "94d6fe5f13b74983117727cc7b2b03a501a13453c762630af8fcf348f29ef2bf",
+      "reason": "Embedded complete independent bank omitted; edition, scope and evidence references retained"
     }
+  ],
+  "currentSource": {
+    "file": "apps/website/private/tool-code/criterios-de-light/calculator.js",
+    "bytes": 7084,
+    "sha256": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3"
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
-  },
-  "clinicalValidation": "not-performed"
+  "clinicalValidation": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
