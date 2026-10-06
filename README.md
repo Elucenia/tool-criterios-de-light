@@ -1,6 +1,6 @@
 # Critérios de Light
 
-ELUCENIA · Felipe Guedes. Local publication candidate prepared from the current per-tool source. No publication or deployment has been performed.
+ELUCENIA · Felipe Guedes. Self-contained per-tool calculation and demonstration.
 
 ## Documentation in ten languages
 
@@ -17,16 +17,20 @@ ELUCENIA · Felipe Guedes. Local publication candidate prepared from the current
 
 The README introduction is in English; the linked usage, field, method, limits, source and review documentation is available in each listed language. Bibliographic titles and schema identifiers retain their source identity.
 
-## Run locally
+## Local use and tests
 
-Serve this directory with a static HTTP server and open index.html. The Node entry is calculator.js. Run node test.cjs to replay all 4 existing synthetic reference cases against the packaged current method. Calculation uses a fixed per-tool local module graph; it needs no API key, remote calculation service, app tree or database.
+Serve this directory with a static HTTP server and open index.html. All calculation and presentation run locally; no remote calculation API, account, dependency install, application source tree or database is required. Node: `require("./calculator.js").calculate(input)`. Run `npm test` for original reference and refusal tests, source-output preservation and presentation in all ten languages. Tests verify the immutable package and write no files.
 
-## Edition and evidence
+## Edition and current implementation
 
-Light 1972; variante BTS 2023: proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 do LSN sérico.
+Method: Light 1972; variante BTS 2023: proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 do LSN sérico.
 
-examples.json contains current documented inputs/expected values. results.json records fresh source Node and packaged browser VM parity. evidence/http-reference-replay.json retains the corresponding completed HTTP replay against r5 build RYDdJbZxqrM8sgoyKEQc-. This is arithmetic and transport evidence; it is not full method/population, clinical or professional-language approval. The full independent bank is not included.
+Implementation: `criterios-de-light@native-2026-10-05+a108fd39240c`. The mathematical body, inputs, formula and original numeric references are unchanged. The existing verdict, level, note and detail rows are exposed without adding a threshold or recommendation. The browser demonstration uses the same pinned pure presentation helpers and whole-source, per-tool templates as the platform. Ten authorial interface and documentation editions are included; an unknown clinical phrase keeps explicit source-language attribution.
 
-## License and attribution
+## Evidence and limits
 
-Existing payload notices and protected attribution references remain preserved. METHOD-CODE-LICENSE.txt and METHOD-CODE-NOTICE.md, when present, preserve the current integration package notices verbatim. publication-provenance.json identifies their exact sources and any historical Apache/current MIT declaration difference. No new instrument, questionnaire, table, translation, publication, data or trademark rights are granted. The candidate requires source-specific rights and fresh remote/protected-file review before distribution.
+`source-result-contract.json` records the output-preservation comparison against the same historical method. `documented-result-examples.json` records rendering of those synthetic outputs; neither is an independent clinical oracle. `publication-provenance.json` pins current code, source identity, translations and their independent static review. Historical served proofs remain in evidence with their original revision. Separate current DEV API and representative standalone browser checks are required before publication; no production or clinical approval is inferred.
+
+## Sources and component licences
+
+Scientific sources, inputs, units, conditions and formula remain in tool.json and the ten documentation files. The nine original public legal, attribution and policy files are preserved byte for byte. CODE-COMPONENTS.md maps the preserved software licences; SOURCE-RIGHTS-REVIEW.md separates source-specific instrument wording, questionnaires, datasets and translation conditions. Software tests and software licences do not establish whole-instrument permission, official endorsement, clinical validation or professional language approval.

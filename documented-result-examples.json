@@ -1,0 +1,2800 @@
+{
+  "id": "criterios-de-light",
+  "implementationVersion": "criterios-de-light@native-2026-10-05+a108fd39240c",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteína pleural/sérica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,67 (> 0,5)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "DHL pleural/sérica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,20 (> 0,6)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "DHL pleural × 2/3 do limite superior",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "300 vs 147 U/L (acima)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3 de 3 critérios positivos: exsudato",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteína pleural/sérica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,29 (≤ 0,5)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "DHL pleural/sérica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,50 (≤ 0,6)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "DHL pleural × 2/3 do limite superior",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "100 vs 167 U/L (abaixo)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nenhum critério positivo: transudato",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteína pleural/sérica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,50 (≤ 0,5)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "DHL pleural/sérica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,60 (≤ 0,6)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "DHL pleural × 2/3 do limite superior",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "120 vs 120 U/L (abaixo)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nenhum critério positivo: transudato",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteína pleural/sérica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,38 (≤ 0,5)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "DHL pleural/sérica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,75 (> 0,6)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "DHL pleural × 2/3 do limite superior",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "150 vs 200 U/L (abaixo)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Gradiente de albumina (soro − pleura)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,6 g/dL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1 de 3 critérios positivos: exsudato",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Exsudato pelos critérios de Light, mas gradiente de albumina > 1,2 g/dL: sugere transudato (comum em quem usa diurético).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pleural/serum protein",
+                "locale": "en",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.67 (> 0.5)",
+                "locale": "en",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.67,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pleural LDH/serum LDH",
+                "locale": "en",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "1.20 (> 0.6)",
+                "locale": "en",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  1.2,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pleural LDH × 2/3 of the upper limit",
+                "locale": "en",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "300 vs 147 U/L (above)",
+                "locale": "en",
+                "template": "documented-authored-186779df21db2a3ac9a6",
+                "sourceNumbers": [
+                  300,
+                  147
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3 of 3 positive criteria: exudate",
+            "locale": "en",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pleural/serum protein",
+                "locale": "en",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.29 (≤ 0.5)",
+                "locale": "en",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.29,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pleural LDH/serum LDH",
+                "locale": "en",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.50 (≤ 0.6)",
+                "locale": "en",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pleural LDH × 2/3 of the upper limit",
+                "locale": "en",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "100 vs 167 U/L (below)",
+                "locale": "en",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  100,
+                  167
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "No positive criteria: transudate",
+            "locale": "en",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pleural/serum protein",
+                "locale": "en",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.50 (≤ 0.5)",
+                "locale": "en",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pleural LDH/serum LDH",
+                "locale": "en",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.60 (≤ 0.6)",
+                "locale": "en",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.6,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pleural LDH × 2/3 of the upper limit",
+                "locale": "en",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "120 vs 120 U/L (below)",
+                "locale": "en",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  120,
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "No positive criteria: transudate",
+            "locale": "en",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pleural/serum protein",
+                "locale": "en",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.38 (≤ 0.5)",
+                "locale": "en",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.38,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pleural LDH/serum LDH",
+                "locale": "en",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.75 (> 0.6)",
+                "locale": "en",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.75,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pleural LDH × 2/3 of the upper limit",
+                "locale": "en",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "150 vs 200 U/L (below)",
+                "locale": "en",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  150,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Albumin gradient (serum − pleura)",
+                "locale": "en",
+                "template": "documented-authored-7fde98dc8724a937fcb2"
+              },
+              "value": {
+                "text": "1.6 g/dL",
+                "locale": "en",
+                "template": "documented-authored-ac2b3d902d62ad6251bb",
+                "sourceNumbers": [
+                  1.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1 of 3 positive criteria: exudate",
+            "locale": "en",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              1
+            ]
+          },
+          "note": {
+            "text": "Exudate by Light criteria, but albumin gradient > 1,2 g/dL: suggests transudate (common in diuretic users).",
+            "locale": "en",
+            "template": "documented-authored-38ce0970892eddabba97"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteína pleural/sérica",
+                "locale": "es",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,67 (> 0,5)",
+                "locale": "es",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.67,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "DHL pleural/sérica",
+                "locale": "es",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "1,20 (> 0,6)",
+                "locale": "es",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  1.2,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "DHL pleural × 2/3 del límite superior",
+                "locale": "es",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "300 vs 147 U/L (por encima)",
+                "locale": "es",
+                "template": "documented-authored-186779df21db2a3ac9a6",
+                "sourceNumbers": [
+                  300,
+                  147
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3 de 3 criterios positivos: exudado",
+            "locale": "es",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteína pleural/sérica",
+                "locale": "es",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,29 (≤ 0,5)",
+                "locale": "es",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.29,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "DHL pleural/sérica",
+                "locale": "es",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,50 (≤ 0,6)",
+                "locale": "es",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "DHL pleural × 2/3 del límite superior",
+                "locale": "es",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "100 vs 167 U/L (por debajo)",
+                "locale": "es",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  100,
+                  167
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ningún criterio positivo: trasudado",
+            "locale": "es",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteína pleural/sérica",
+                "locale": "es",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,50 (≤ 0,5)",
+                "locale": "es",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "DHL pleural/sérica",
+                "locale": "es",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,60 (≤ 0,6)",
+                "locale": "es",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.6,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "DHL pleural × 2/3 del límite superior",
+                "locale": "es",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "120 vs 120 U/L (por debajo)",
+                "locale": "es",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  120,
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ningún criterio positivo: trasudado",
+            "locale": "es",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteína pleural/sérica",
+                "locale": "es",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,38 (≤ 0,5)",
+                "locale": "es",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.38,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "DHL pleural/sérica",
+                "locale": "es",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,75 (> 0,6)",
+                "locale": "es",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.75,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "DHL pleural × 2/3 del límite superior",
+                "locale": "es",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "150 vs 200 U/L (por debajo)",
+                "locale": "es",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  150,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Gradiente de albúmina (suero − pleura)",
+                "locale": "es",
+                "template": "documented-authored-7fde98dc8724a937fcb2"
+              },
+              "value": {
+                "text": "1,6 g/dL",
+                "locale": "es",
+                "template": "documented-authored-ac2b3d902d62ad6251bb",
+                "sourceNumbers": [
+                  1.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1 de 3 criterios positivos: exudado",
+            "locale": "es",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              1
+            ]
+          },
+          "note": {
+            "text": "Exudado por los criterios de Light, pero gradiente de albúmina > 1,2 g/dL: sugiere trasudado (común en quienes usan diurético).",
+            "locale": "es",
+            "template": "documented-authored-38ce0970892eddabba97"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Protéine pleurale/sérique",
+                "locale": "fr",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,67 (> 0,5)",
+                "locale": "fr",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.67,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH pleurale/sérique",
+                "locale": "fr",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "1,20 (> 0,6)",
+                "locale": "fr",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  1.2,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH pleurale × 2/3 de la limite supérieure",
+                "locale": "fr",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "300 vs 147 U/L (au-dessus)",
+                "locale": "fr",
+                "template": "documented-authored-186779df21db2a3ac9a6",
+                "sourceNumbers": [
+                  300,
+                  147
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3 des 3 critères positifs : exsudat",
+            "locale": "fr",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Protéine pleurale/sérique",
+                "locale": "fr",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,29 (≤ 0,5)",
+                "locale": "fr",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.29,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH pleurale/sérique",
+                "locale": "fr",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,50 (≤ 0,6)",
+                "locale": "fr",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH pleurale × 2/3 de la limite supérieure",
+                "locale": "fr",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "100 vs 167 U/L (en dessous)",
+                "locale": "fr",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  100,
+                  167
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Aucun critère positif : transsudat",
+            "locale": "fr",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Protéine pleurale/sérique",
+                "locale": "fr",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,50 (≤ 0,5)",
+                "locale": "fr",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH pleurale/sérique",
+                "locale": "fr",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,60 (≤ 0,6)",
+                "locale": "fr",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.6,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH pleurale × 2/3 de la limite supérieure",
+                "locale": "fr",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "120 vs 120 U/L (en dessous)",
+                "locale": "fr",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  120,
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Aucun critère positif : transsudat",
+            "locale": "fr",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Protéine pleurale/sérique",
+                "locale": "fr",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,38 (≤ 0,5)",
+                "locale": "fr",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.38,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH pleurale/sérique",
+                "locale": "fr",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,75 (> 0,6)",
+                "locale": "fr",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.75,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH pleurale × 2/3 de la limite supérieure",
+                "locale": "fr",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "150 vs 200 U/L (en dessous)",
+                "locale": "fr",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  150,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Gradient d’albumine (sérum − plèvre)",
+                "locale": "fr",
+                "template": "documented-authored-7fde98dc8724a937fcb2"
+              },
+              "value": {
+                "text": "1,6 g/dL",
+                "locale": "fr",
+                "template": "documented-authored-ac2b3d902d62ad6251bb",
+                "sourceNumbers": [
+                  1.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1 des 3 critères positifs : exsudat",
+            "locale": "fr",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              1
+            ]
+          },
+          "note": {
+            "text": "Exsudat selon les critères de Light, mais gradient d’albumine > 1,2 g/dL : suggère un transsudat (fréquent chez les patients sous diurétique).",
+            "locale": "fr",
+            "template": "documented-authored-38ce0970892eddabba97"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pleura-/Serumprotein",
+                "locale": "de",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,67 (> 0,5)",
+                "locale": "de",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.67,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pleurale/serum LDH",
+                "locale": "de",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "1,20 (> 0,6)",
+                "locale": "de",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  1.2,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pleurale LDH × 2/3 der oberen Grenze",
+                "locale": "de",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "300 vs 147 U/L (darüber)",
+                "locale": "de",
+                "template": "documented-authored-186779df21db2a3ac9a6",
+                "sourceNumbers": [
+                  300,
+                  147
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3 von 3 positiven Kriterien: Exsudat",
+            "locale": "de",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pleura-/Serumprotein",
+                "locale": "de",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,29 (≤ 0,5)",
+                "locale": "de",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.29,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pleurale/serum LDH",
+                "locale": "de",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,50 (≤ 0,6)",
+                "locale": "de",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pleurale LDH × 2/3 der oberen Grenze",
+                "locale": "de",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "100 vs 167 U/L (darunter)",
+                "locale": "de",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  100,
+                  167
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Kein positives Kriterium: Transsudat",
+            "locale": "de",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pleura-/Serumprotein",
+                "locale": "de",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,50 (≤ 0,5)",
+                "locale": "de",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pleurale/serum LDH",
+                "locale": "de",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,60 (≤ 0,6)",
+                "locale": "de",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.6,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pleurale LDH × 2/3 der oberen Grenze",
+                "locale": "de",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "120 vs 120 U/L (darunter)",
+                "locale": "de",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  120,
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Kein positives Kriterium: Transsudat",
+            "locale": "de",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pleura-/Serumprotein",
+                "locale": "de",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,38 (≤ 0,5)",
+                "locale": "de",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.38,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pleurale/serum LDH",
+                "locale": "de",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,75 (> 0,6)",
+                "locale": "de",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.75,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pleurale LDH × 2/3 der oberen Grenze",
+                "locale": "de",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "150 vs 200 U/L (darunter)",
+                "locale": "de",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  150,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Albumingradient (Serum − Pleura)",
+                "locale": "de",
+                "template": "documented-authored-7fde98dc8724a937fcb2"
+              },
+              "value": {
+                "text": "1,6 g/dL",
+                "locale": "de",
+                "template": "documented-authored-ac2b3d902d62ad6251bb",
+                "sourceNumbers": [
+                  1.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1 von 3 positiven Kriterien: Exsudat",
+            "locale": "de",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              1
+            ]
+          },
+          "note": {
+            "text": "Exsudat nach den Light-Kriterien, aber Albumingradient > 1,2 g/dL: spricht für ein Transsudat (häufig bei Diuretika-Anwendern).",
+            "locale": "de",
+            "template": "documented-authored-38ce0970892eddabba97"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteina pleurica/sierica",
+                "locale": "it",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,67 (> 0,5)",
+                "locale": "it",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.67,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH pleurica/sierica",
+                "locale": "it",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "1,20 (> 0,6)",
+                "locale": "it",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  1.2,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH pleurica × 2/3 del limite superiore",
+                "locale": "it",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "300 vs 147 U/L (sopra)",
+                "locale": "it",
+                "template": "documented-authored-186779df21db2a3ac9a6",
+                "sourceNumbers": [
+                  300,
+                  147
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3 di 3 criteri positivi: essudato",
+            "locale": "it",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteina pleurica/sierica",
+                "locale": "it",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,29 (≤ 0,5)",
+                "locale": "it",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.29,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH pleurica/sierica",
+                "locale": "it",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,50 (≤ 0,6)",
+                "locale": "it",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH pleurica × 2/3 del limite superiore",
+                "locale": "it",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "100 vs 167 U/L (sotto)",
+                "locale": "it",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  100,
+                  167
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nessun criterio positivo: trasudato",
+            "locale": "it",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteina pleurica/sierica",
+                "locale": "it",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,50 (≤ 0,5)",
+                "locale": "it",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH pleurica/sierica",
+                "locale": "it",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,60 (≤ 0,6)",
+                "locale": "it",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.6,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH pleurica × 2/3 del limite superiore",
+                "locale": "it",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "120 vs 120 U/L (sotto)",
+                "locale": "it",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  120,
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nessun criterio positivo: trasudato",
+            "locale": "it",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Proteina pleurica/sierica",
+                "locale": "it",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0,38 (≤ 0,5)",
+                "locale": "it",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.38,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH pleurica/sierica",
+                "locale": "it",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0,75 (> 0,6)",
+                "locale": "it",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.75,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH pleurica × 2/3 del limite superiore",
+                "locale": "it",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "150 vs 200 U/L (sotto)",
+                "locale": "it",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  150,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Gradiente di albumina (siero − pleura)",
+                "locale": "it",
+                "template": "documented-authored-7fde98dc8724a937fcb2"
+              },
+              "value": {
+                "text": "1,6 g/dL",
+                "locale": "it",
+                "template": "documented-authored-ac2b3d902d62ad6251bb",
+                "sourceNumbers": [
+                  1.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "1 di 3 criteri positivi: essudato",
+            "locale": "it",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              1
+            ]
+          },
+          "note": {
+            "text": "Essudato secondo i criteri di Light, ma gradiente di albumina > 1,2 g/dL: suggerisce trasudato (comune in chi usa diuretici).",
+            "locale": "it",
+            "template": "documented-authored-38ce0970892eddabba97"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "البروتين الجنبي/المصلي",
+                "locale": "ar",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "٠٫٦٧ (> ٠٫٥)",
+                "locale": "ar",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.67,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH الجنبي/المصلي",
+                "locale": "ar",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "١٫٢٠ (> ٠٫٦)",
+                "locale": "ar",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  1.2,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH الجنبي × 2/3 من الحد الأعلى",
+                "locale": "ar",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "٣٠٠ مقابل ١٤٧ وحدة/لتر (أعلى)",
+                "locale": "ar",
+                "template": "documented-authored-186779df21db2a3ac9a6",
+                "sourceNumbers": [
+                  300,
+                  147
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "٣ من 3 معايير إيجابية: نضح",
+            "locale": "ar",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "البروتين الجنبي/المصلي",
+                "locale": "ar",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "٠٫٢٩ (≤ ٠٫٥)",
+                "locale": "ar",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.29,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH الجنبي/المصلي",
+                "locale": "ar",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "٠٫٥٠ (≤ ٠٫٦)",
+                "locale": "ar",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH الجنبي × 2/3 من الحد الأعلى",
+                "locale": "ar",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "١٠٠ مقابل ١٦٧ وحدة/لتر (أدنى)",
+                "locale": "ar",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  100,
+                  167
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "لا توجد معايير إيجابية: رشاحة",
+            "locale": "ar",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "البروتين الجنبي/المصلي",
+                "locale": "ar",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "٠٫٥٠ (≤ ٠٫٥)",
+                "locale": "ar",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH الجنبي/المصلي",
+                "locale": "ar",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "٠٫٦٠ (≤ ٠٫٦)",
+                "locale": "ar",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.6,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH الجنبي × 2/3 من الحد الأعلى",
+                "locale": "ar",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "١٢٠ مقابل ١٢٠ وحدة/لتر (أدنى)",
+                "locale": "ar",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  120,
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "لا توجد معايير إيجابية: رشاحة",
+            "locale": "ar",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "البروتين الجنبي/المصلي",
+                "locale": "ar",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "٠٫٣٨ (≤ ٠٫٥)",
+                "locale": "ar",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.38,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDH الجنبي/المصلي",
+                "locale": "ar",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "٠٫٧٥ (> ٠٫٦)",
+                "locale": "ar",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.75,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDH الجنبي × 2/3 من الحد الأعلى",
+                "locale": "ar",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "١٥٠ مقابل ٢٠٠ وحدة/لتر (أدنى)",
+                "locale": "ar",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  150,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "تدرج الألبومين (المصل − الجنبة)",
+                "locale": "ar",
+                "template": "documented-authored-7fde98dc8724a937fcb2"
+              },
+              "value": {
+                "text": "١٫٦ g/dL",
+                "locale": "ar",
+                "template": "documented-authored-ac2b3d902d62ad6251bb",
+                "sourceNumbers": [
+                  1.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "١ من 3 معايير إيجابية: نضح",
+            "locale": "ar",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              1
+            ]
+          },
+          "note": {
+            "text": "نضح وفق معايير لايت، لكن تدرج الألبومين > 1,2 g/dL: يشير إلى رشاحة (شائع عند مستخدمي المدرات).",
+            "locale": "ar",
+            "template": "documented-authored-38ce0970892eddabba97"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "胸腔液/血清蛋白",
+                "locale": "zh",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.67（> 0.5）",
+                "locale": "zh",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.67,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "胸腔液/血清LDH",
+                "locale": "zh",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "1.20（> 0.6）",
+                "locale": "zh",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  1.2,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "胸腔液LDH × 上限的2/3",
+                "locale": "zh",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "300 vs 147 U/L（高于）",
+                "locale": "zh",
+                "template": "documented-authored-186779df21db2a3ac9a6",
+                "sourceNumbers": [
+                  300,
+                  147
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3项阳性标准中的3项：渗出液",
+            "locale": "zh",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "胸腔液/血清蛋白",
+                "locale": "zh",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.29（≤ 0.5）",
+                "locale": "zh",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.29,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "胸腔液/血清LDH",
+                "locale": "zh",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.50（≤ 0.6）",
+                "locale": "zh",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "胸腔液LDH × 上限的2/3",
+                "locale": "zh",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "100 vs 167 U/L（低于）",
+                "locale": "zh",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  100,
+                  167
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "无阳性标准：漏出液",
+            "locale": "zh",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "胸腔液/血清蛋白",
+                "locale": "zh",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.50（≤ 0.5）",
+                "locale": "zh",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "胸腔液/血清LDH",
+                "locale": "zh",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.60（≤ 0.6）",
+                "locale": "zh",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.6,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "胸腔液LDH × 上限的2/3",
+                "locale": "zh",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "120 vs 120 U/L（低于）",
+                "locale": "zh",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  120,
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "无阳性标准：漏出液",
+            "locale": "zh",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "胸腔液/血清蛋白",
+                "locale": "zh",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.38（≤ 0.5）",
+                "locale": "zh",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.38,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "胸腔液/血清LDH",
+                "locale": "zh",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.75（> 0.6）",
+                "locale": "zh",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.75,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "胸腔液LDH × 上限的2/3",
+                "locale": "zh",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "150 vs 200 U/L（低于）",
+                "locale": "zh",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  150,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "白蛋白梯度（血清−胸膜）",
+                "locale": "zh",
+                "template": "documented-authored-7fde98dc8724a937fcb2"
+              },
+              "value": {
+                "text": "1.6 g/dL",
+                "locale": "zh",
+                "template": "documented-authored-ac2b3d902d62ad6251bb",
+                "sourceNumbers": [
+                  1.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3项阳性标准中的1项：渗出液",
+            "locale": "zh",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              1
+            ]
+          },
+          "note": {
+            "text": "按Light标准为渗出液，但白蛋白梯度 > 1,2 g/dL：提示漏出液（常见于使用利尿剂者）。",
+            "locale": "zh",
+            "template": "documented-authored-38ce0970892eddabba97"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "胸水/血清タンパク",
+                "locale": "ja",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.67（> 0.5）",
+                "locale": "ja",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.67,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "胸水/血清LDH",
+                "locale": "ja",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "1.20（> 0.6）",
+                "locale": "ja",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  1.2,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "胸水LDH × 上限の2/3",
+                "locale": "ja",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "300 vs 147 U/L（以上）",
+                "locale": "ja",
+                "template": "documented-authored-186779df21db2a3ac9a6",
+                "sourceNumbers": [
+                  300,
+                  147
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3つの陽性基準のうち3：滲出液",
+            "locale": "ja",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "胸水/血清タンパク",
+                "locale": "ja",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.29（≤ 0.5）",
+                "locale": "ja",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.29,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "胸水/血清LDH",
+                "locale": "ja",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.50（≤ 0.6）",
+                "locale": "ja",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "胸水LDH × 上限の2/3",
+                "locale": "ja",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "100 vs 167 U/L（未満）",
+                "locale": "ja",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  100,
+                  167
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "陽性基準なし：漏出液",
+            "locale": "ja",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "胸水/血清タンパク",
+                "locale": "ja",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.50（≤ 0.5）",
+                "locale": "ja",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "胸水/血清LDH",
+                "locale": "ja",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.60（≤ 0.6）",
+                "locale": "ja",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.6,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "胸水LDH × 上限の2/3",
+                "locale": "ja",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "120 vs 120 U/L（未満）",
+                "locale": "ja",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  120,
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "陽性基準なし：漏出液",
+            "locale": "ja",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "胸水/血清タンパク",
+                "locale": "ja",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.38（≤ 0.5）",
+                "locale": "ja",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.38,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "胸水/血清LDH",
+                "locale": "ja",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.75（> 0.6）",
+                "locale": "ja",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.75,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "胸水LDH × 上限の2/3",
+                "locale": "ja",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "150 vs 200 U/L（未満）",
+                "locale": "ja",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  150,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "アルブミン勾配（血清−胸膜）",
+                "locale": "ja",
+                "template": "documented-authored-7fde98dc8724a937fcb2"
+              },
+              "value": {
+                "text": "1.6 g/dL",
+                "locale": "ja",
+                "template": "documented-authored-ac2b3d902d62ad6251bb",
+                "sourceNumbers": [
+                  1.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3つの陽性基準のうち1：滲出液",
+            "locale": "ja",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              1
+            ]
+          },
+          "note": {
+            "text": "Light基準では滲出液だが、アルブミン勾配 > 1,2 g/dL：漏出液を示唆する（利尿薬使用者に多い）。",
+            "locale": "ja",
+            "template": "documented-authored-38ce0970892eddabba97"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्ल्यूरल/सीरम प्रोटीन",
+                "locale": "hi",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.67 (> 0.5)",
+                "locale": "hi",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.67,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "प्ल्यूरल/सीरम LDH",
+                "locale": "hi",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "1.20 (> 0.6)",
+                "locale": "hi",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  1.2,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्ल्यूरल LDH × ऊपरी सीमा का 2/3",
+                "locale": "hi",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "300 बनाम 147 U/L (ऊपर)",
+                "locale": "hi",
+                "template": "documented-authored-186779df21db2a3ac9a6",
+                "sourceNumbers": [
+                  300,
+                  147
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3 सकारात्मक मानदंडों में से 3: एक्सुडेट",
+            "locale": "hi",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्ल्यूरल/सीरम प्रोटीन",
+                "locale": "hi",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.29 (≤ 0.5)",
+                "locale": "hi",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.29,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "प्ल्यूरल/सीरम LDH",
+                "locale": "hi",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.50 (≤ 0.6)",
+                "locale": "hi",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्ल्यूरल LDH × ऊपरी सीमा का 2/3",
+                "locale": "hi",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "100 बनाम 167 U/L (नीचे)",
+                "locale": "hi",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  100,
+                  167
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कोई सकारात्मक मानदंड नहीं: ट्रांसुडेट",
+            "locale": "hi",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्ल्यूरल/सीरम प्रोटीन",
+                "locale": "hi",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.50 (≤ 0.5)",
+                "locale": "hi",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "प्ल्यूरल/सीरम LDH",
+                "locale": "hi",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.60 (≤ 0.6)",
+                "locale": "hi",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.6,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्ल्यूरल LDH × ऊपरी सीमा का 2/3",
+                "locale": "hi",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "120 बनाम 120 U/L (नीचे)",
+                "locale": "hi",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  120,
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कोई सकारात्मक मानदंड नहीं: ट्रांसुडेट",
+            "locale": "hi",
+            "template": "documented-authored-95c49b2e4cbe2d895f18"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्ल्यूरल/सीरम प्रोटीन",
+                "locale": "hi",
+                "template": "documented-authored-d978298b8e10779bd732"
+              },
+              "value": {
+                "text": "0.38 (≤ 0.5)",
+                "locale": "hi",
+                "template": "documented-authored-6c3fb36588dafa48eea7",
+                "sourceNumbers": [
+                  0.38,
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "प्ल्यूरल/सीरम LDH",
+                "locale": "hi",
+                "template": "documented-authored-1aa01d5d0d852d0caf87"
+              },
+              "value": {
+                "text": "0.75 (> 0.6)",
+                "locale": "hi",
+                "template": "documented-authored-203de2752c32baaad8a2",
+                "sourceNumbers": [
+                  0.75,
+                  0.6
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्ल्यूरल LDH × ऊपरी सीमा का 2/3",
+                "locale": "hi",
+                "template": "documented-authored-e432f574f0c68afc77e4"
+              },
+              "value": {
+                "text": "150 बनाम 200 U/L (नीचे)",
+                "locale": "hi",
+                "template": "documented-authored-914b47cb75b61c198539",
+                "sourceNumbers": [
+                  150,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "एल्बुमिन ग्रेडिएंट (सीरम − प्ल्यूरा)",
+                "locale": "hi",
+                "template": "documented-authored-7fde98dc8724a937fcb2"
+              },
+              "value": {
+                "text": "1.6 g/dL",
+                "locale": "hi",
+                "template": "documented-authored-ac2b3d902d62ad6251bb",
+                "sourceNumbers": [
+                  1.6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "3 सकारात्मक मानदंडों में से 1: एक्सुडेट",
+            "locale": "hi",
+            "template": "documented-authored-c715811f7e1548f5cf1b",
+            "sourceNumbers": [
+              1
+            ]
+          },
+          "note": {
+            "text": "Light मानदंडों के अनुसार एक्सुडेट, लेकिन एल्बुमिन ग्रेडिएंट > 1,2 g/dL: ट्रांसुडेट का सुझाव देता है (डाययूरेटिक उपयोग करने वालों में सामान्य)।",
+            "locale": "hi",
+            "template": "documented-authored-38ce0970892eddabba97"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}

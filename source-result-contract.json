@@ -1,0 +1,375 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "criterios-de-light",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "726799a2b770943500cadba1af22bb7f36f5637f",
+    "oldEngineSha256": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3",
+    "currentEngineSha256": "a108fd39240cb7d95d8abd07a1798b74c440e58bb48e07ccceb049a3bd75b417"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Proteína 4,0/6,0, DHL 300/250, LSN 220: 3 critérios, exsudato",
+      "input": {
+        "pt_pl": 4,
+        "pt_sr": 6,
+        "dhl_pl": 300,
+        "dhl_sr": 250,
+        "dhl_lsn": 220
+      },
+      "publicOutput": {
+        "id": "criterios-de-light",
+        "main": [
+          "Exsudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.6666666666666666,
+          "rd": 1.2,
+          "exs": true,
+          "n": 3,
+          "flags": [
+            true,
+            true,
+            true
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "rp": 0.667,
+          "rd": 1.2,
+          "n": 3,
+          "exs": true
+        },
+        "level": "mid",
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Exsudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "level": "mid",
+        "verdict": "3 de 3 critérios positivos: exsudato",
+        "rows": [
+          [
+            "Proteína pleural/sérica",
+            "0,67 (&gt; 0,5)"
+          ],
+          [
+            "DHL pleural/sérica",
+            "1,20 (&gt; 0,6)"
+          ],
+          [
+            "DHL pleural × 2/3 do limite superior",
+            "300 vs 147 U/L (acima)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "rp": 0.6666666666666666,
+          "rd": 1.2,
+          "exs": true,
+          "n": 3,
+          "flags": [
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Proteína 2,0/7,0, DHL 100/200, LSN 250: transudato",
+      "input": {
+        "pt_pl": 2,
+        "pt_sr": 7,
+        "dhl_pl": 100,
+        "dhl_sr": 200,
+        "dhl_lsn": 250
+      },
+      "publicOutput": {
+        "id": "criterios-de-light",
+        "main": [
+          "Transudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.2857142857142857,
+          "rd": 0.5,
+          "exs": false,
+          "n": 0,
+          "flags": [
+            false,
+            false,
+            false
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "rp": 0.286,
+          "rd": 0.5,
+          "n": 0,
+          "exs": false
+        },
+        "level": "low",
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Transudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "level": "low",
+        "verdict": "Nenhum critério positivo: transudato",
+        "rows": [
+          [
+            "Proteína pleural/sérica",
+            "0,29 (≤ 0,5)"
+          ],
+          [
+            "DHL pleural/sérica",
+            "0,50 (≤ 0,6)"
+          ],
+          [
+            "DHL pleural × 2/3 do limite superior",
+            "100 vs 167 U/L (abaixo)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "rp": 0.2857142857142857,
+          "rd": 0.5,
+          "exs": false,
+          "n": 0,
+          "flags": [
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Exatamente nos cortes (0,5; 0,6; 2/3 do LSN): transudato",
+      "input": {
+        "pt_pl": 3,
+        "pt_sr": 6,
+        "dhl_pl": 120,
+        "dhl_sr": 200,
+        "dhl_lsn": 180
+      },
+      "publicOutput": {
+        "id": "criterios-de-light",
+        "main": [
+          "Transudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.5,
+          "rd": 0.6,
+          "exs": false,
+          "n": 0,
+          "flags": [
+            false,
+            false,
+            false
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "n": 0,
+          "exs": false
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Transudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "level": "low",
+        "verdict": "Nenhum critério positivo: transudato",
+        "rows": [
+          [
+            "Proteína pleural/sérica",
+            "0,50 (≤ 0,5)"
+          ],
+          [
+            "DHL pleural/sérica",
+            "0,60 (≤ 0,6)"
+          ],
+          [
+            "DHL pleural × 2/3 do limite superior",
+            "120 vs 120 U/L (abaixo)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "rp": 0.5,
+          "rd": 0.6,
+          "exs": false,
+          "n": 0,
+          "flags": [
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Só DHL 150/200 positiva, albumina 3,5 − 1,9 = 1,6: exsudato com alerta",
+      "input": {
+        "pt_pl": 2.5,
+        "pt_sr": 6.5,
+        "dhl_pl": 150,
+        "dhl_sr": 200,
+        "dhl_lsn": 300,
+        "alb_pl": 1.9,
+        "alb_sr": 3.5
+      },
+      "publicOutput": {
+        "id": "criterios-de-light",
+        "main": [
+          "Exsudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "raw": {
+          "rp": 0.38461538461538464,
+          "rd": 0.75,
+          "exs": true,
+          "n": 1,
+          "flags": [
+            false,
+            true,
+            false
+          ]
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "rd": 0.75,
+          "n": 1,
+          "exs": true
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Exsudato",
+          ""
+        ],
+        "label": "Critérios de Light",
+        "level": "mid",
+        "verdict": "1 de 3 critérios positivos: exsudato",
+        "rows": [
+          [
+            "Proteína pleural/sérica",
+            "0,38 (≤ 0,5)"
+          ],
+          [
+            "DHL pleural/sérica",
+            "0,75 (&gt; 0,6)"
+          ],
+          [
+            "DHL pleural × 2/3 do limite superior",
+            "150 vs 200 U/L (abaixo)"
+          ],
+          [
+            "Gradiente de albumina (soro − pleura)",
+            "1,6 g/dL"
+          ]
+        ],
+        "note": "Exsudato pelos critérios de Light, mas gradiente de albumina &gt; 1,2 g/dL: sugere transudato (comum em quem usa diurético).",
+        "raw": {
+          "rp": 0.38461538461538464,
+          "rd": 0.75,
+          "exs": true,
+          "n": 1,
+          "flags": [
+            false,
+            true,
+            false
+          ]
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    }
+  ]
+}

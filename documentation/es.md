@@ -105,3 +105,54 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+3 de 3 criterios positivos: exudado
+
+| Detalles del resultado | |
+| --- | --- |
+| Proteína pleural/sérica | 0,67 (> 0,5) |
+| DHL pleural/sérica | 1,20 (> 0,6) |
+| DHL pleural × 2/3 del límite superior | 300 vs 147 U/L (por encima) |
+
+
+### 2
+
+Ningún criterio positivo: trasudado
+
+| Detalles del resultado | |
+| --- | --- |
+| Proteína pleural/sérica | 0,29 (≤ 0,5) |
+| DHL pleural/sérica | 0,50 (≤ 0,6) |
+| DHL pleural × 2/3 del límite superior | 100 vs 167 U/L (por debajo) |
+
+
+### 3
+
+Ningún criterio positivo: trasudado
+
+| Detalles del resultado | |
+| --- | --- |
+| Proteína pleural/sérica | 0,50 (≤ 0,5) |
+| DHL pleural/sérica | 0,60 (≤ 0,6) |
+| DHL pleural × 2/3 del límite superior | 120 vs 120 U/L (por debajo) |
+
+
+### 4
+
+1 de 3 criterios positivos: exudado
+
+| Detalles del resultado | |
+| --- | --- |
+| Proteína pleural/sérica | 0,38 (≤ 0,5) |
+| DHL pleural/sérica | 0,75 (> 0,6) |
+| DHL pleural × 2/3 del límite superior | 150 vs 200 U/L (por debajo) |
+| Gradiente de albúmina (suero − pleura) | 1,6 g/dL |
+
+Exudado por los criterios de Light, pero gradiente de albúmina > 1,2 g/dL: sugiere trasudado (común en quienes usan diurético).
+

@@ -105,3 +105,54 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+3 de 3 critérios positivos: exsudato
+
+| Detalhes do resultado | |
+| --- | --- |
+| Proteína pleural/sérica | 0,67 (> 0,5) |
+| DHL pleural/sérica | 1,20 (> 0,6) |
+| DHL pleural × 2/3 do limite superior | 300 vs 147 U/L (acima) |
+
+
+### 2
+
+Nenhum critério positivo: transudato
+
+| Detalhes do resultado | |
+| --- | --- |
+| Proteína pleural/sérica | 0,29 (≤ 0,5) |
+| DHL pleural/sérica | 0,50 (≤ 0,6) |
+| DHL pleural × 2/3 do limite superior | 100 vs 167 U/L (abaixo) |
+
+
+### 3
+
+Nenhum critério positivo: transudato
+
+| Detalhes do resultado | |
+| --- | --- |
+| Proteína pleural/sérica | 0,50 (≤ 0,5) |
+| DHL pleural/sérica | 0,60 (≤ 0,6) |
+| DHL pleural × 2/3 do limite superior | 120 vs 120 U/L (abaixo) |
+
+
+### 4
+
+1 de 3 critérios positivos: exsudato
+
+| Detalhes do resultado | |
+| --- | --- |
+| Proteína pleural/sérica | 0,38 (≤ 0,5) |
+| DHL pleural/sérica | 0,75 (> 0,6) |
+| DHL pleural × 2/3 do limite superior | 150 vs 200 U/L (abaixo) |
+| Gradiente de albumina (soro − pleura) | 1,6 g/dL |
+
+Exsudato pelos critérios de Light, mas gradiente de albumina > 1,2 g/dL: sugere transudato (comum em quem usa diurético).
+

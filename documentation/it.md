@@ -105,3 +105,54 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+3 di 3 criteri positivi: essudato
+
+| Dettagli del risultato | |
+| --- | --- |
+| Proteina pleurica/sierica | 0,67 (> 0,5) |
+| LDH pleurica/sierica | 1,20 (> 0,6) |
+| LDH pleurica × 2/3 del limite superiore | 300 vs 147 U/L (sopra) |
+
+
+### 2
+
+Nessun criterio positivo: trasudato
+
+| Dettagli del risultato | |
+| --- | --- |
+| Proteina pleurica/sierica | 0,29 (≤ 0,5) |
+| LDH pleurica/sierica | 0,50 (≤ 0,6) |
+| LDH pleurica × 2/3 del limite superiore | 100 vs 167 U/L (sotto) |
+
+
+### 3
+
+Nessun criterio positivo: trasudato
+
+| Dettagli del risultato | |
+| --- | --- |
+| Proteina pleurica/sierica | 0,50 (≤ 0,5) |
+| LDH pleurica/sierica | 0,60 (≤ 0,6) |
+| LDH pleurica × 2/3 del limite superiore | 120 vs 120 U/L (sotto) |
+
+
+### 4
+
+1 di 3 criteri positivi: essudato
+
+| Dettagli del risultato | |
+| --- | --- |
+| Proteina pleurica/sierica | 0,38 (≤ 0,5) |
+| LDH pleurica/sierica | 0,75 (> 0,6) |
+| LDH pleurica × 2/3 del limite superiore | 150 vs 200 U/L (sotto) |
+| Gradiente di albumina (siero − pleura) | 1,6 g/dL |
+
+Essudato secondo i criteri di Light, ma gradiente di albumina > 1,2 g/dL: suggerisce trasudato (comune in chi usa diuretici).
+

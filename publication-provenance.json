@@ -1,240 +1,178 @@
 {
-  "schema": "elucenia-current-per-tool-local-publication-candidate",
+  "schema": "elucenia-public-native-full-output-presentation-r3",
   "id": "criterios-de-light",
   "repository": "Elucenia/tool-criterios-de-light",
-  "parentCommitSha": "9d2b957011a1616ccf2d302113cb78a4aef02b21",
-  "baseTreeSha": "52639be3e11db39ec368358879490830a00576cf",
-  "protectedFiles": {
-    "LICENSE": {
-      "path": "LICENSE",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
-      "size": 11358,
-      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
-    },
-    "NOTICE": {
-      "path": "NOTICE",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "c3cd9b7eab8bd1bf6da5de3c8d131bc9051f25e2",
-      "size": 1626,
-      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/c3cd9b7eab8bd1bf6da5de3c8d131bc9051f25e2"
-    },
-    "AUTHORSHIP.md": {
-      "path": "AUTHORSHIP.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "184ebd59050e70dd81848cfb80d4c0716b461873",
-      "size": 3283,
-      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/184ebd59050e70dd81848cfb80d4c0716b461873"
-    },
-    "CITATION.cff": {
-      "path": "CITATION.cff",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "4d1723eebf5166e17103d290fa9c767933aac88d",
-      "size": 897,
-      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/4d1723eebf5166e17103d290fa9c767933aac88d"
-    },
-    "SECURITY.md": {
-      "path": "SECURITY.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
-      "size": 894,
-      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
-    },
-    "CONTRIBUTING.md": {
-      "path": "CONTRIBUTING.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "0b35f01a1832dc66c6480937445aa84ed00cf4cd",
-      "size": 1469,
-      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/0b35f01a1832dc66c6480937445aa84ed00cf4cd"
-    },
-    ".github/workflows/ci.yml": {
-      "path": ".github/workflows/ci.yml",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
-      "size": 279,
-      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
-    },
-    ".gitattributes": {
-      "path": ".gitattributes",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
-      "size": 19,
-      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
-    },
-    ".gitignore": {
-      "path": ".gitignore",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
-      "size": 42,
-      "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
-    }
-  },
-  "oldCandidate": {
-    "manifest": {
-      "file": "reports/review-20261003/github-publication-candidate-final36-v4.json",
-      "bytes": 6823260,
-      "sha256": "a3c528b12d7b5416fa0e62dda9e5106864bae7ff86710fa765934b5a3069e16c"
-    },
-    "rowId": "criterios-de-light",
-    "publicationProvenance": {
-      "file": "reports/review-20261003/github-publication-candidates-final36-v4/criterios-de-light/publication-provenance.json",
-      "bytes": 6695,
-      "sha256": "a683e4c9da87db5783b4a23d89f0ec248b65e91a480387197d3f117f02aa46d5"
-    },
-    "integrationProvenance": {
-      "file": "reports/review-20261003/github-publication-candidates-final36-v4/criterios-de-light/provenance.json",
-      "bytes": 25595,
-      "sha256": "f83716f913b1a100cbaf24de0df2200d099f9d8cebbf285491d4703c17f209f9"
-    }
+  "remoteBase": {
+    "branch": "main",
+    "commit": "726799a2b770943500cadba1af22bb7f36f5637f",
+    "tree": "913f3f702a8785f5c8560d2cc6abfc297d3b6b40"
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/criterios-de-light/calculator.js",
-    "bytes": 7084,
-    "sha256": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3"
+    "bytes": 7289,
+    "sha256": "a108fd39240cb7d95d8abd07a1798b74c440e58bb48e07ccceb049a3bd75b417"
   },
-  "sourceToolSha256": "ec32fcda042319f77dc7582f7768b66d11e33795fe153c22f09f8cbc2ef2ac8f",
+  "implementationVersion": "criterios-de-light@native-2026-10-05+a108fd39240c",
   "methodVersion": "Light 1972; variante BTS 2023: proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 do LSN sérico.",
-  "implementationVersion": "criterios-de-light@native-2026-10-03+3503a1b15963",
-  "browserBundleSha256": "ca2be52f08927a126f7b5edf7a2aebb0490f1445c03205d4df95ee4f6ff06a3c",
-  "graph": {
-    "entry": "tool-code/criterios-de-light/calculator.js",
-    "modules": [
-      {
-        "file": "tool-code/criterios-de-light/calculator.js",
-        "bytes": 7084,
-        "sha256": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3"
-      }
-    ],
-    "transforms": []
-  },
-  "currentActualHttpEvidence": {
-    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
-    "bytes": 7105457,
-    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
-  },
-  "tests": {
-    "cases": 4,
-    "sourceNodeParityPassed": true,
-    "browserVmParityPassed": true,
-    "independentOracleDerived": false,
-    "actualBrowserDOMVerified": false
-  },
-  "rights": {
-    "historicalPayloadLicenseDeclaration": "Apache-2.0",
-    "currentIntegrationPackageLicenseDeclaration": "MIT",
-    "currentLegalFiles": [
-      {
-        "file": "apps/command-center/private/tool-code/criterios-de-light/LICENSE",
-        "bytes": 1229,
-        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93"
-      },
-      {
-        "file": "apps/command-center/private/tool-code/criterios-de-light/NOTICE.md",
-        "bytes": 1183,
-        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d"
-      }
-    ],
-    "protectedFilesPreservedFromOldPayload": [],
-    "protectedRemoteAttributionReferences": {
-      "LICENSE": {
-        "path": "LICENSE",
-        "mode": "100644",
-        "type": "blob",
-        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
-        "size": 11358,
-        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
-      },
-      "NOTICE": {
-        "path": "NOTICE",
-        "mode": "100644",
-        "type": "blob",
-        "sha": "c3cd9b7eab8bd1bf6da5de3c8d131bc9051f25e2",
-        "size": 1626,
-        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/c3cd9b7eab8bd1bf6da5de3c8d131bc9051f25e2"
-      },
-      "AUTHORSHIP.md": {
-        "path": "AUTHORSHIP.md",
-        "mode": "100644",
-        "type": "blob",
-        "sha": "184ebd59050e70dd81848cfb80d4c0716b461873",
-        "size": 3283,
-        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/184ebd59050e70dd81848cfb80d4c0716b461873"
-      },
-      "CITATION.cff": {
-        "path": "CITATION.cff",
-        "mode": "100644",
-        "type": "blob",
-        "sha": "4d1723eebf5166e17103d290fa9c767933aac88d",
-        "size": 897,
-        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/4d1723eebf5166e17103d290fa9c767933aac88d"
-      },
-      "SECURITY.md": {
-        "path": "SECURITY.md",
-        "mode": "100644",
-        "type": "blob",
-        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
-        "size": 894,
-        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
-      },
-      "CONTRIBUTING.md": {
-        "path": "CONTRIBUTING.md",
-        "mode": "100644",
-        "type": "blob",
-        "sha": "0b35f01a1832dc66c6480937445aa84ed00cf4cd",
-        "size": 1469,
-        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/0b35f01a1832dc66c6480937445aa84ed00cf4cd"
-      },
-      ".github/workflows/ci.yml": {
-        "path": ".github/workflows/ci.yml",
-        "mode": "100644",
-        "type": "blob",
-        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
-        "size": 279,
-        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
-      },
-      ".gitattributes": {
-        "path": ".gitattributes",
-        "mode": "100644",
-        "type": "blob",
-        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
-        "size": 19,
-        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
-      },
-      ".gitignore": {
-        "path": ".gitignore",
-        "mode": "100644",
-        "type": "blob",
-        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
-        "size": 42,
-        "url": "https://api.github.com/repos/Elucenia/tool-criterios-de-light/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
-      }
+  "outputContract": [
+    "main",
+    "label",
+    "raw",
+    "level",
+    "verdict",
+    "rows",
+    "note"
+  ],
+  "sourceBodyChanged": false,
+  "inputsFormulaAndNumericalOutputsUnchanged": true,
+  "protectedRemoteFiles": [
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
     },
-    "sourceSpecificEvidence": {
-      "sourceSpecificStatus": "not-approved-by-this-consolidation",
-      "sourceSpecificEvidence": null,
-      "wholeInstrumentApproval": false,
-      "oldCandidateInstrumentRightsApproval": "not-performed"
+    {
+      "path": "NOTICE",
+      "sha256": "ed9737fbfff42561b56140155ab52859cce558282f34f56aecef7c5bc66a0db1"
     },
-    "scope": "Historical Apache declaration and current MIT integration notices retained with exact sources; no relicensing or instrument approval inferred",
-    "reviewRequired": true,
-    "divergences": [
-      "Historical payload and current package declare different license labels; scope/authorship mapping must be reviewed before distribution"
-    ],
-    "wholeInstrumentApproval": false
+    {
+      "path": "AUTHORSHIP.md",
+      "sha256": "a7867b581e075afd6b7efbc93c55e621c3c35c8c681e1f37d3398c3b954beee9"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "40eeee9c896e60559d3e7fabc7c8da110b500c156d349d33c3bcc8fad724310c"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "4c48091918c0c026c5c76dfb46ef7503983f070d6e402694707ece570c0c9a0b"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    }
+  ],
+  "sourceSnapshots": [
+    {
+      "file": "apps/dashboard/private/localization/pt-BR.json",
+      "bytes": 13647982,
+      "sha256": "28ccccd21be582c58448407d589b5171fc58f08424934b92957d5a28f7662c40"
+    },
+    {
+      "file": "apps/dashboard/private/localization/en.json",
+      "bytes": 14038907,
+      "sha256": "13ae4da010a9f2e0331985d26e10f24542d70dfa9fb57c54c3b1f578f7ff92ba"
+    },
+    {
+      "file": "apps/dashboard/private/localization/es.json",
+      "bytes": 14091025,
+      "sha256": "8c11d0aeff23af02cee859b844c6e86dbd36c6ff3aeb94be4d3817b3f252825b"
+    },
+    {
+      "file": "apps/dashboard/private/localization/fr.json",
+      "bytes": 14146083,
+      "sha256": "bc4e26a1076c62e5d5df6325efa2eba34a236d70a48186f322e68da00f88392f"
+    },
+    {
+      "file": "apps/dashboard/private/localization/de.json",
+      "bytes": 14118649,
+      "sha256": "9160149ec19832146fe930316792ccdc14fd475231217a6ed772488b9c6f8b99"
+    },
+    {
+      "file": "apps/dashboard/private/localization/it.json",
+      "bytes": 14090640,
+      "sha256": "c141607f449e0acb33241fa22d5c2012e2034bd3f64e517730944bec61b13061"
+    },
+    {
+      "file": "apps/dashboard/private/localization/ar.json",
+      "bytes": 14363325,
+      "sha256": "358b92b7d8bb7a916532f576c44cb8a071330a697456cee8348bec5ee4381dbd"
+    },
+    {
+      "file": "apps/dashboard/private/localization/zh.json",
+      "bytes": 13940069,
+      "sha256": "22daaa39df8a2a3a38a9b873011aeb8498876c6e5500c5932abc9c4a4aace75d"
+    },
+    {
+      "file": "apps/dashboard/private/localization/ja.json",
+      "bytes": 14096534,
+      "sha256": "19f044c36143e536193f98fa1862f0671809f336986ae9d863e0256084151d56"
+    },
+    {
+      "file": "apps/dashboard/private/localization/hi.json",
+      "bytes": 14869561,
+      "sha256": "73670c872df401d81305c7728c9b46e258a12e607f4d1a40d4f7a2e962505fe5"
+    }
+  ],
+  "pureFormatters": [
+    {
+      "file": "apps/website/src/components/locale-number-format.ts",
+      "bytes": 747,
+      "sha256": "b5b4bd6eaadde5ab191094dafabf73ab594c8bd01fb040c00bb5ecb10167e6c7"
+    },
+    {
+      "file": "apps/website/src/components/numeric-input.ts",
+      "bytes": 2618,
+      "sha256": "e8259298ea682869cc050ac0ee7b5fdc4ddc9e54aaac1e602975d93fd97b3cb3"
+    },
+    {
+      "file": "apps/website/src/components/calculator-result-localization.ts",
+      "bytes": 11039,
+      "sha256": "b41abb33cf924d7a7d5bce4e09fbe115ab1b425c1f855e3962c9b4300b70c749"
+    },
+    {
+      "file": "apps/website/src/components/calculator-locale.ts",
+      "bytes": 15741,
+      "sha256": "e1cf2e3aca4c08cb85f241718fb9fe2a04c0e99ca00877b0ff3ab7d9c92d4967"
+    },
+    {
+      "file": "apps/website/src/components/calculator-result-narratives.ts",
+      "bytes": 4633,
+      "sha256": "596d9ec7d03077529cc691e2048427e45ebbc2534be1932bea5ca37d811b4144"
+    }
+  ],
+  "resultRenderer": [
+    {
+      "file": "apps/website/src/components/DocumentedCalculationResult.tsx",
+      "bytes": 2589,
+      "sha256": "cb12598a9588e2bc1bede6f4180690d899eebedc1dce9df4574f3991e4fd0573"
+    }
+  ],
+  "authorialTemplateData": {
+    "file": "apps/website/translations/tools/native-result-narratives-data.json",
+    "bytes": 1434221,
+    "sha256": "b3c720b298033ea4cb84b4eb2b7132e3c6f2e4f042436c3e1a83b0cb9ae0efb5"
   },
-  "appWrites": false,
-  "externalMutations": false,
-  "publicationPerformed": false,
-  "externalPublicationReady": false,
-  "clinicalApproval": false,
-  "professionalLanguageApproval": false
+  "sourceFreeze": {
+    "file": "reports/review-20261005-completion/native-result-presentation-r1/final-source-freeze-r1/source-freeze.json",
+    "bytes": 833769,
+    "sha256": "5335d52bf94eafbf32b0a499a916e609cefdf357b97247be981796cf14a15d26"
+  },
+  "finalModuleProof": {
+    "file": "reports/review-20261005-completion/native-result-presentation-r1/final-source-integration-r4/final-module-proof-r3.json",
+    "bytes": 13798,
+    "sha256": "231c666a91e4ee92ca5b22c3d6dde4450f0f9f7d186a6a2b60421d67e8ebcaff"
+  },
+  "previousPublicationProvenance": {
+    "path": "evidence/publication-provenance-before-output-contract.json",
+    "sha256": "f160cb94eb4f774882d80aebe4a0ddbe3dd04d819448c3f713c09b0423187a17"
+  },
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "instrumentRightsApproval": "not-performed",
+  "actualBrowserJourney": "pending representative standalone checks",
+  "servedApiGate": "pending current DEV3073; no production claim",
+  "GitHubWrites": 0,
+  "privateApplicationTreeIncluded": false
 }

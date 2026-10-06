@@ -324,7 +324,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Light 1972; variante BTS 2023: proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 do LSN sérico.",
-    "implementationVersion": "criterios-de-light@native-2026-10-03+3503a1b15963",
+    "implementationVersion": "criterios-de-light@native-2026-10-05+a108fd39240c",
     "currentMethodSource": "https://www.brit-thoracic.org.uk/document-library/guidelines/pleural-disease/pleural-disease-full-supplement/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -582,7 +582,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3",
+      "implementationHash": "a108fd39240cb7d95d8abd07a1798b74c440e58bb48e07ccceb049a3bd75b417",
       "documentaryEditionAmendment": {
         "recordedAt": "2026-10-04T13:40:42.995Z",
         "source": "Light 1972; variante BTS 2023: proteína pleural/sérica >0,5; LDH pleural/sérica >0,6; LDH pleural >2/3 do LSN sérico.",
@@ -624,7 +624,35 @@
       "currentImplementationIdentityEvidence": {
         "file": "reports/review-20261003/current-implementation-identities-application-final45.json",
         "scope": "Exact current adapter bytes. Method edition, inputs, mathematical expressions, bibliographic checks, source-case history and approval statuses unchanged by this metadata correction."
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "criterios-de-light@native-2026-10-03+3503a1b15963",
+          "previousImplementationHash": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3",
+          "implementationHash": "a108fd39240cb7d95d8abd07a1798b74c440e58bb48e07ccceb049a3bd75b417",
+          "scientificBodySha256": "c897bd2b9503a6063b40ed708c2f52848f73302deb69b16615013f476266e10b",
+          "metadataContractHash": "aefcb28ee1387e42ba1409538889035653f7a18aec0c07575b4aa606e7a46fbb",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Esta implementação combina os critérios de Light com a variante documentada pela BTS 2023: LDH pleural acima de dois terços do limite superior sérico do laboratório, distinta do corte absoluto do artigo de 1972. Use amostras pleural e sérica pareadas e o limite do próprio laboratório; os cortes são estritamente maiores que os limiares. A classificação bioquímica não identifica a causa do derrame. O gradiente opcional de albumina é uma avaliação complementar e não deve, sozinho, substituir a investigação clínica.",
     "limitsEvidence": {
@@ -660,25 +688,23 @@
     },
     "implementationUpdatedAt": "2026-10-05T13:02:54.731Z"
   },
-  "sourceToolSha256": "ec32fcda042319f77dc7582f7768b66d11e33795fe153c22f09f8cbc2ef2ac8f",
+  "sourceToolSha256": "aec51142db37d6328406eba10a41b9f9c359d651ffa7161f285490e4a4eff788",
   "omittedFullReferenceBanks": [
     {
-      "at": "independentArithmeticTest.cases",
       "rows": 4,
       "sha256": "94d6fe5f13b74983117727cc7b2b03a501a13453c762630af8fcf348f29ef2bf",
-      "reason": "Full independent reference bank omitted from standalone public candidate; original evidence references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
-      "at": "versionEvidence.independentArithmetic.cases",
       "rows": 4,
       "sha256": "94d6fe5f13b74983117727cc7b2b03a501a13453c762630af8fcf348f29ef2bf",
-      "reason": "Embedded complete independent bank omitted; edition, scope and evidence references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "currentSource": {
     "file": "apps/website/private/tool-code/criterios-de-light/calculator.js",
-    "bytes": 7084,
-    "sha256": "3503a1b159634edf4cb9640cd9912a0fdb4ef2ae051e5b36e0889e2367f4dae3"
+    "bytes": 7289,
+    "sha256": "a108fd39240cb7d95d8abd07a1798b74c440e58bb48e07ccceb049a3bd75b417"
   },
   "clinicalValidation": "not-performed",
   "professionalLanguageReview": "not-performed",

@@ -105,3 +105,54 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+3 des 3 critères positifs : exsudat
+
+| Détails du résultat | |
+| --- | --- |
+| Protéine pleurale/sérique | 0,67 (> 0,5) |
+| LDH pleurale/sérique | 1,20 (> 0,6) |
+| LDH pleurale × 2/3 de la limite supérieure | 300 vs 147 U/L (au-dessus) |
+
+
+### 2
+
+Aucun critère positif : transsudat
+
+| Détails du résultat | |
+| --- | --- |
+| Protéine pleurale/sérique | 0,29 (≤ 0,5) |
+| LDH pleurale/sérique | 0,50 (≤ 0,6) |
+| LDH pleurale × 2/3 de la limite supérieure | 100 vs 167 U/L (en dessous) |
+
+
+### 3
+
+Aucun critère positif : transsudat
+
+| Détails du résultat | |
+| --- | --- |
+| Protéine pleurale/sérique | 0,50 (≤ 0,5) |
+| LDH pleurale/sérique | 0,60 (≤ 0,6) |
+| LDH pleurale × 2/3 de la limite supérieure | 120 vs 120 U/L (en dessous) |
+
+
+### 4
+
+1 des 3 critères positifs : exsudat
+
+| Détails du résultat | |
+| --- | --- |
+| Protéine pleurale/sérique | 0,38 (≤ 0,5) |
+| LDH pleurale/sérique | 0,75 (> 0,6) |
+| LDH pleurale × 2/3 de la limite supérieure | 150 vs 200 U/L (en dessous) |
+| Gradient d’albumine (sérum − plèvre) | 1,6 g/dL |
+
+Exsudat selon les critères de Light, mais gradient d’albumine > 1,2 g/dL : suggère un transsudat (fréquent chez les patients sous diurétique).
+

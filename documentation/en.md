@@ -105,3 +105,54 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+3 of 3 positive criteria: exudate
+
+| Result details | |
+| --- | --- |
+| Pleural/serum protein | 0.67 (> 0.5) |
+| Pleural LDH/serum LDH | 1.20 (> 0.6) |
+| Pleural LDH × 2/3 of the upper limit | 300 vs 147 U/L (above) |
+
+
+### 2
+
+No positive criteria: transudate
+
+| Result details | |
+| --- | --- |
+| Pleural/serum protein | 0.29 (≤ 0.5) |
+| Pleural LDH/serum LDH | 0.50 (≤ 0.6) |
+| Pleural LDH × 2/3 of the upper limit | 100 vs 167 U/L (below) |
+
+
+### 3
+
+No positive criteria: transudate
+
+| Result details | |
+| --- | --- |
+| Pleural/serum protein | 0.50 (≤ 0.5) |
+| Pleural LDH/serum LDH | 0.60 (≤ 0.6) |
+| Pleural LDH × 2/3 of the upper limit | 120 vs 120 U/L (below) |
+
+
+### 4
+
+1 of 3 positive criteria: exudate
+
+| Result details | |
+| --- | --- |
+| Pleural/serum protein | 0.38 (≤ 0.5) |
+| Pleural LDH/serum LDH | 0.75 (> 0.6) |
+| Pleural LDH × 2/3 of the upper limit | 150 vs 200 U/L (below) |
+| Albumin gradient (serum − pleura) | 1.6 g/dL |
+
+Exudate by Light criteria, but albumin gradient > 1,2 g/dL: suggests transudate (common in diuretic users).
+

@@ -105,3 +105,54 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+3 von 3 positiven Kriterien: Exsudat
+
+| Ergebnisdetails | |
+| --- | --- |
+| Pleura-/Serumprotein | 0,67 (> 0,5) |
+| Pleurale/serum LDH | 1,20 (> 0,6) |
+| Pleurale LDH × 2/3 der oberen Grenze | 300 vs 147 U/L (darüber) |
+
+
+### 2
+
+Kein positives Kriterium: Transsudat
+
+| Ergebnisdetails | |
+| --- | --- |
+| Pleura-/Serumprotein | 0,29 (≤ 0,5) |
+| Pleurale/serum LDH | 0,50 (≤ 0,6) |
+| Pleurale LDH × 2/3 der oberen Grenze | 100 vs 167 U/L (darunter) |
+
+
+### 3
+
+Kein positives Kriterium: Transsudat
+
+| Ergebnisdetails | |
+| --- | --- |
+| Pleura-/Serumprotein | 0,50 (≤ 0,5) |
+| Pleurale/serum LDH | 0,60 (≤ 0,6) |
+| Pleurale LDH × 2/3 der oberen Grenze | 120 vs 120 U/L (darunter) |
+
+
+### 4
+
+1 von 3 positiven Kriterien: Exsudat
+
+| Ergebnisdetails | |
+| --- | --- |
+| Pleura-/Serumprotein | 0,38 (≤ 0,5) |
+| Pleurale/serum LDH | 0,75 (> 0,6) |
+| Pleurale LDH × 2/3 der oberen Grenze | 150 vs 200 U/L (darunter) |
+| Albumingradient (Serum − Pleura) | 1,6 g/dL |
+
+Exsudat nach den Light-Kriterien, aber Albumingradient > 1,2 g/dL: spricht für ein Transsudat (häufig bei Diuretika-Anwendern).
+
